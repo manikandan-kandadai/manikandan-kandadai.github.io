@@ -4197,6 +4197,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar {
   opacity: 0 !important;
+    margin-top: -25px;
   position: relative;
   min-height: 50px;
   margin-bottom: 20px;
@@ -4232,6 +4233,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
             box-shadow: none;
   }
   .navbar-collapse.collapse {
+    margin-top: -30px !important;
     display: block !important;
     height: auto !important;
     padding-bottom: 0;
@@ -4342,7 +4344,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   display: block;
   width: 22px;
   height: 2px;
-  border-radius: 1px;
+  border-radius: 1px;   
 }
 .navbar-toggle .icon-bar + .icon-bar {
   margin-top: 4px;

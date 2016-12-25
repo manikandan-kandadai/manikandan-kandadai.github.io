@@ -52,6 +52,7 @@ body {
 
 .footmessage {
 	color: white;
+    text-align: center;
 }
 
 
@@ -211,6 +212,7 @@ nav.navbar-fixed-top {
 	padding: 25px 0;
 	opacity: 1 !important;
 	background: white;
+
 
 	/*box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.05);*/
 }
@@ -732,7 +734,7 @@ section {
 /* Footer */
 
 footer {
-	padding: 140px 0 40px;
+	padding: 0 0 40px;
 	background: url('../img/footer.jpg');
 	-webkit-background-size: cover;
 	background-size: cover;
@@ -778,7 +780,7 @@ footer .opening-hours {
 }
 
 footer .bottom-footer {
-	margin-top: 150px;
+	margin-top: 50px;
 }
 
 footer .social-footer {
@@ -1231,4 +1233,17 @@ a {
   60% {
     transform: translateY(-15px);
   }
+}
+
+
+
+.bottomnav {
+    margin-top: -20px;
+}
+
+.topnav {
+    margin-top: 20px;
+}
+
+.footercontainer {
 }
