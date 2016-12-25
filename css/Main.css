@@ -270,8 +270,9 @@ nav.navbar-fixed-top .navbar-nav > li > a:not(.btn) {
 }
 
 .btn.btn-white-fill:hover {
-	color: #00a8ff;
-	background: #fff;
+    border-color: #2f2f2f;
+	color: #ff6161;
+	background: #2f2f2f;
 }
 
 .btn.btn-gray-fill {
@@ -628,7 +629,8 @@ section {
 /* Pricing */
 
 #About {
-	background: #00a8ff url('../img/pricing1.jpg') no-repeat center center;
+	background: url('../img/pricing1.jpg') no-repeat center center;
+    background-color: rgba(255, 97, 97, 1);
 	-webkit-background-size: cover;
 	background-size: cover;
 	-webkit-transition: background-image 0.6s linear 0.3s;
@@ -1246,4 +1248,30 @@ a {
 }
 
 .footercontainer {
+}
+
+.aboutme {
+        margin: 5%;
+    padding-top: 20%;
+    text-align: justify;
+    letter-spacing: 0.7px;
+}
+
+.styledMedium {
+	color: #2f2f2f;
+	font-family: 'Josefin Sans', sans-serif;
+    font-weight: 500;
+}
+
+.profile {
+    margin: 20px;
+    padding-top: 40px;
+}
+
+.about {
+    margin-top: -200px;
+}
+
+.aboutCanvas {
+    margin-top: -20%;
 }
