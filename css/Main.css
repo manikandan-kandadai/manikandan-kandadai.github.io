@@ -498,7 +498,7 @@ section {
 /*	border: 2px solid #2f2f2f;
 */	-webkit-transition: all 0.3s ease;
 	transition: all 0.3s ease;
-	box-shadow: -1px 0px 8px rgba(0, 0, 0, 0.2);
+	box-shadow: -1px 0px 8px rgba(0, 0, 0, 0.4);
 	background-color: white;
 }
 
@@ -515,7 +515,7 @@ section {
 
 .service .heading {
 	position: relative;
-	top: 120px;
+	top: 140px;
 	-webkit-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
 	transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
@@ -525,8 +525,8 @@ section {
 }
 
 .service:hover {
-	border:1px dashed #2f2f2f;
 	background-color: rgba(255, 97, 97, 0.7);
+    box-shadow: -1px 0px 8px rgba(0, 0, 0, 0.8);
 }
 
 .service:hover .icon-holder {
@@ -1274,4 +1274,241 @@ a {
 
 .aboutCanvas {
     margin-top: -20%;
+}
+
+header .ixdheader {
+	width: auto;
+	color: white;
+	background:  radial-gradient(
+      rgba(255, 97, 97, 0.8), 
+      rgba(255, 97, 97, 0.9)
+    ), url('../img/pages/ixd/cover.png');
+	background-size: cover; 
+}
+
+header .StyledStrong {
+    color: white;
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 600;
+}
+
+header .Styled {
+    color: white;
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 600;
+}
+
+.ixd {
+    width: auto;
+	color: white;
+	background:  radial-gradient(
+      rgba(255, 97, 97, 0.55), 
+      rgba(255, 97, 97, 0.7)
+    ), url('../img/pages/ixd/cover.png');
+	background-size: cover; 
+    background-position: center;
+}
+
+.ixd:hover {
+   background:  radial-gradient(
+      rgba(255, 97, 97, 0.9), 
+      rgba(255, 97, 97, 0.8)
+    ), url('../img/pages/ixd/cover.png');
+	background-size: cover;  
+    background-position: center;
+}
+
+.tixd {
+    width: auto;
+	color: white;
+	background:  radial-gradient(
+      rgba(255, 97, 97, 0.55), 
+      rgba(255, 97, 97, 0.7)
+    ), url('../img/pages/tixd/cover.png');
+	background-size: cover; 
+    background-position: center;
+}
+
+.tixd:hover {
+   background:  radial-gradient(
+      rgba(255, 97, 97, 0.9), 
+      rgba(255, 97, 97, 0.8)
+    ), url('../img/pages/tixd/cover.png');
+	background-size: cover;  
+    background-position: center;
+}
+
+.cinquiry {
+    width: auto;
+	color: white;
+	background:  radial-gradient(
+      rgba(255, 97, 97, 0.55), 
+      rgba(255, 97, 97, 0.7)
+    ), url('../img/pages/cinquiry/cover.png');
+	background-size: cover; 
+    background-position: center;
+}
+
+.cinquiry:hover {
+   background:  radial-gradient(
+      rgba(255, 97, 97, 0.9), 
+      rgba(255, 97, 97, 0.8)
+    ), url('../img/pages/cinquiry/cover.png');
+	background-size: cover;  
+    background-position: center;
+}
+
+.vrgame {
+    width: auto;
+	color: white;
+	background:  radial-gradient(
+      rgba(255, 97, 97, 0.55), 
+      rgba(255, 97, 97, 0.7)
+    ), url('../img/pages/vrgame/des/cover3.png');
+	background-size: cover; 
+    background-position: center;
+}
+
+.vrgame:hover {
+   background:  radial-gradient(
+      rgba(255, 97, 97, 0.9), 
+      rgba(255, 97, 97, 0.8)
+    ), url('../img/pages/vrgame/des/cover3.png');
+	background-size: cover;  
+    background-position: center;
+}
+
+.critmake {
+    width: auto;
+	color: white;
+	background:  radial-gradient(
+      rgba(255, 97, 97, 0.55), 
+      rgba(255, 97, 97, 0.7)
+    ), url('../img/experiments/crit/cover.jpg');
+	background-size: cover; 
+    background-position: center;
+}
+
+.critmake:hover {
+   background:  radial-gradient(
+      rgba(255, 97, 97, 0.9), 
+      rgba(255, 97, 97, 0.8)
+    ), url('../img/experiments/crit/cover.jpg');
+	background-size: cover;  
+    background-position: center;
+}
+
+.kinectphoto {
+        width: auto;
+	color: white;
+	background:  radial-gradient(
+      rgba(255, 97, 97, 0.55), 
+      rgba(255, 97, 97, 0.7)
+    ), url('../img/experiments/kinectphoto/cover.png');
+	background-size: cover; 
+    background-position: center;
+}
+
+.kinectphoto:hover {
+   background:  radial-gradient(
+      rgba(255, 97, 97, 0.9), 
+      rgba(255, 97, 97, 0.8)
+    ), url('../img/experiments/kinectphoto/cover.png');
+	background-size: cover;  
+    background-position: center;
+}
+
+.scifi {
+        width: auto;
+	color: white;
+	background:  radial-gradient(
+      rgba(255, 97, 97, 0.55), 
+      rgba(255, 97, 97, 0.7)
+    ), url('../img/experiments/scifi/cover.png');
+	background-size: cover; 
+    background-position: center;
+}
+
+.scifi:hover {
+   background:  radial-gradient(
+      rgba(255, 97, 97, 0.9), 
+      rgba(255, 97, 97, 0.8)
+    ), url('../img/experiments/scifi/cover.png');
+	background-size: cover;  
+    background-position: center;
+}
+
+.designjams {
+        width: auto;
+	color: white;
+	background:  radial-gradient(
+      rgba(255, 97, 97, 0.55), 
+      rgba(255, 97, 97, 0.7)
+    ), url('../img/experiments/Djams/cover.png');
+	background-size: cover; 
+    background-position: center;
+}
+
+.designjams:hover {
+   background:  radial-gradient(
+      rgba(255, 97, 97, 0.9), 
+      rgba(255, 97, 97, 0.8)
+    ), url('../img/experiments/Djams/cover.png');
+	background-size: cover;  
+    background-position: center;
+}
+
+.more {
+    padding: 15px;
+    margin-top: -8px;
+}
+
+.hififrame {
+    margin-top: -140px;
+}
+
+.video-container {
+    margin-top: 40px;
+    position: relative;
+    padding-bottom: 45%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+}
+.video-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.slider {
+    width:100%;
+}
+
+
+
+
+
+.slider_auto {
+    width: 100%;
+}
+
+.slider_auto .sssprev {
+    display: none;
+}
+.slider_auto .sssnext {
+    display: none;
+}
+
+.sketchalt {
+    width: 2%;
+    margin: auto;
+}
+
+
+
+.pink-theme {
+    	background: rgba(255,97,97,0.95);
 }
