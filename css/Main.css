@@ -1044,7 +1044,7 @@ footer .social-footer li:hover a {
 }
 
 .mobile-nav ul li {
-	margin: 25px 0;
+	margin: 15px 0;
 }
 
 .mobile-nav ul li a:not(.btn) {
@@ -1465,6 +1465,7 @@ header .Styled {
 
 .hififrame {
     margin-top: -140px;
+    margin-left: 0;
 }
 
 .video-container {
@@ -1511,4 +1512,26 @@ header .Styled {
 
 .pink-theme {
     	background: rgba(255,97,97,0.95);
+}
+
+header .tixdheader {
+	width: auto;
+	color: white;
+	background:  radial-gradient(
+      rgba(255, 97, 97, 0.8), 
+      rgba(255, 97, 97, 0.9)
+    ), url('../img/pages/tixd/cover.png');
+	background-size: cover; 
+    background-position: center;
+}
+
+header .vrheader {
+	width: auto;
+	color: white;
+	background:  radial-gradient(
+      rgba(255, 97, 97, 0.8), 
+      rgba(255, 97, 97, 0.9)
+    ), url('../img/pages/vrgame/des/cover3.png');
+	background-size: cover;
+    background-position: center;
 }
