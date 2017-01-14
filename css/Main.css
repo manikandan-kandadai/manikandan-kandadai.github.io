@@ -47,6 +47,7 @@ body {
 .styled {
 	color: #2f2f2f;
 	font-family: 'Josefin Sans', sans-serif;
+    font-size: 22px;
 }
 /* Typography */
 
@@ -1533,5 +1534,16 @@ header .vrheader {
       rgba(255, 97, 97, 0.9)
     ), url('../img/pages/vrgame/des/cover3.png');
 	background-size: cover;
+    background-position: center;
+}
+
+header .critheader {
+	width: auto;
+	color: white;
+	background:  radial-gradient(
+      rgba(255, 97, 97, 0.8), 
+      rgba(255, 97, 97, 0.9)
+    ), url('../img/experiments/crit/cover.jpg');
+	background-size: cover; 
     background-position: center;
 }
