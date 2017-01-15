@@ -1547,3 +1547,9 @@ header .critheader {
 	background-size: cover; 
     background-position: center;
 }
+
+.styledoverlay {
+	color: #2f2f2f;
+	font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+}
