@@ -270,7 +270,19 @@ nav.navbar-fixed-top .navbar-nav > li > a:not(.btn) {
 	background: transparent;
 }
 
+.btn.btn-black-fill {
+	color: #2f2f2f;
+	border-color: #2f2f2f;
+	background: transparent;
+}
+
 .btn.btn-white-fill:hover {
+    border-color: #2f2f2f;
+	color: #ff6161;
+	background: #2f2f2f;
+}
+
+.btn.btn-black-fill:hover {
     border-color: #2f2f2f;
 	color: #ff6161;
 	background: #2f2f2f;
@@ -599,22 +611,23 @@ section {
 }
 .team {
 	margin: 80px 0;
-	padding-bottom: 10px;
 	background: white;
 	box-shadow: -1px 0px 8px rgba(0, 0, 0, 0.2);
 }
 
 .team .cover .overlay {
 	height: 250px;
+    border-color: #fff;
 	padding-top: 60px;
 	opacity: 0;
-	background: rgba(255, 97, 97, 0.7);
+	background: rgba(51, 51, 51, 0.83);
 	-webkit-transition: opacity 0.45s ease;
 	transition: opacity 0.45s ease;
 }
 
 .team:hover .cover .overlay {
 	opacity: 1;
+    border-color: #fff;
 }
 
 .team .avatar {
@@ -1281,9 +1294,72 @@ header .ixdheader {
 	width: auto;
 	color: white;
 	background:  radial-gradient(
-      rgba(255, 97, 97, 0.8), 
-      rgba(255, 97, 97, 0.9)
+      rgba(255, 97, 97, 0.95), 
+      rgba(255, 97, 97, 0.3)
     ), url('../img/pages/ixd/cover.png');
+	background-size: cover; 
+}
+
+header .scifiheader {
+	width: auto;
+	color: white;
+	background:  radial-gradient(
+      rgba(255, 97, 97, 0.95), 
+      rgba(255, 97, 97, 0.3)
+    ), url('../img/experiments/scifi/cover.png');
+	background-size: cover;
+    background-position: center;
+}
+
+header .laserheader {
+	width: auto;
+	color: white;
+	background:  radial-gradient(
+      rgba(255, 97, 97, 0.95), 
+      rgba(255, 97, 97, 0.3)
+    ), url('../img/experiments/laser/cover.png');
+	background-size: cover; 
+}
+
+header .nutanixheader {
+	width: auto;
+	color: white;
+	background:  radial-gradient(
+      rgba(255, 97, 97, 0.95), 
+      rgba(255, 97, 97, 0.3)
+    ), url('../img/experiments/Djams/nutanix/cover.jpg');
+	background-size: cover;
+    background-position: center;
+}
+
+header .duoheader {
+	width: auto;
+	color: white;
+	background:  radial-gradient(
+      rgba(255, 97, 97, 0.95), 
+      rgba(255, 97, 97, 0.3)
+    ), url('../img/experiments/Djams/duo/cover.jpg');
+	background-size: cover;
+    background-position: center;
+}
+
+header .fbheader {
+	width: auto;
+	color: white;
+	background:  radial-gradient(
+      rgba(255, 97, 97, 0.95), 
+      rgba(255, 97, 97, 0.3)
+    ), url('../img/experiments/Djams/fb/cover.jpg');
+	background-size: cover; 
+}
+
+header .treportHeader {
+	width: auto;
+	color: white;
+	background:  radial-gradient(
+      rgba(255, 97, 97, 0.95), 
+      rgba(255, 97, 97, 0.3)
+    ), url('../img/pages/termreport/page2.png');
 	background-size: cover; 
 }
 
@@ -1310,6 +1386,40 @@ header .Styled {
     background-position: center;
 }
 
+
+.nutanix {
+    width: auto;
+	color: white;
+	background:  radial-gradient(
+      rgba(255, 97, 97, 0.55), 
+      rgba(255, 97, 97, 0.7)
+    ), url('../img/experiments/Djams/nutanix/cover.jpg');
+	background-size: cover; 
+    background-position: center;
+}
+
+.duo {
+    width: auto;
+	color: white;
+	background:  radial-gradient(
+      rgba(255, 97, 97, 0.55), 
+      rgba(255, 97, 97, 0.7)
+    ), url('../img/experiments/Djams/duo/cover.jpg');
+	background-size: cover; 
+    background-position: center;
+}
+
+.treport {
+    width: auto;
+	color: white;
+	background:  radial-gradient(
+      rgba(255, 97, 97, 0.55), 
+      rgba(255, 97, 97, 0.7)
+    ), url('../img/pages/termreport/page2.png');
+	background-size: cover; 
+    background-position: center;
+}
+
 .ixd:hover {
    background:  radial-gradient(
       rgba(255, 97, 97, 0.9), 
@@ -1318,6 +1428,40 @@ header .Styled {
 	background-size: cover;  
     background-position: center;
 }
+
+.nutanix:hover {
+   background:  radial-gradient(
+      rgba(255, 97, 97, 0.9), 
+      rgba(255, 97, 97, 0.8)
+    ), url('../img/experiments/Djams/nutanix/cover.jpg');
+	background-size: cover;  
+    background-position: center;
+}
+
+
+
+.duo:hover {
+   background:  radial-gradient(
+      rgba(255, 97, 97, 0.9), 
+      rgba(255, 97, 97, 0.8)
+    ), url('../img/experiments/Djams/duo/cover.jpg');
+	background-size: cover;  
+    background-position: center;
+}
+
+
+
+
+.treport:hover {
+   background:  radial-gradient(
+      rgba(255, 97, 97, 0.9), 
+      rgba(255, 97, 97, 0.8)
+    ), url('../img/pages/termreport/page2.png');
+	background-size: cover;  
+    background-position: center;
+}
+
+
 
 .tixd {
     width: auto;
@@ -1350,6 +1494,17 @@ header .Styled {
     background-position: center;
 }
 
+.fb {
+    width: auto;
+	color: white;
+	background:  radial-gradient(
+      rgba(255, 97, 97, 0.55), 
+      rgba(255, 97, 97, 0.7)
+    ), url('../img/experiments/Djams/fb/cover.jpg');
+	background-size: cover; 
+    background-position: center;
+}
+
 .cinquiry:hover {
    background:  radial-gradient(
       rgba(255, 97, 97, 0.9), 
@@ -1358,6 +1513,16 @@ header .Styled {
 	background-size: cover;  
     background-position: center;
 }
+
+.fb:hover {
+   background:  radial-gradient(
+      rgba(255, 97, 97, 0.9), 
+      rgba(255, 97, 97, 0.8)
+    ), url('../img/experiments/Djams/fb/cover.jpg');
+	background-size: cover;  
+    background-position: center;
+}
+
 
 .vrgame {
     width: auto;
@@ -1430,11 +1595,31 @@ header .Styled {
     background-position: center;
 }
 
+.laser {
+        width: auto;
+	color: white;
+	background:  radial-gradient(
+      rgba(255, 97, 97, 0.55), 
+      rgba(255, 97, 97, 0.7)
+    ), url('../img/experiments/laser/cover.png');
+	background-size: cover; 
+    background-position: center;
+}
+
 .scifi:hover {
    background:  radial-gradient(
       rgba(255, 97, 97, 0.9), 
       rgba(255, 97, 97, 0.8)
     ), url('../img/experiments/scifi/cover.png');
+	background-size: cover;  
+    background-position: center;
+}
+
+.laser:hover {
+   background:  radial-gradient(
+      rgba(255, 97, 97, 0.9), 
+      rgba(255, 97, 97, 0.8)
+    ), url('../img/experiments/laser/cover.png');
 	background-size: cover;  
     background-position: center;
 }
@@ -1549,7 +1734,7 @@ header .critheader {
 }
 
 .styledoverlay {
-	color: #2f2f2f;
+	color: white;
 	font-family: 'Josefin Sans', sans-serif;
     font-size: 18px;
 }
