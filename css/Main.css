@@ -1379,9 +1379,31 @@ header .Styled {
     width: auto;
 	color: white;
 	background:  radial-gradient(
-      rgba(255, 97, 97, 0.55), 
-      rgba(255, 97, 97, 0.7)
+      rgba(255, 97, 97, 0.5), 
+      rgba(255, 97, 97, 0.1)
     ), url('../img/pages/ixd/cover.png');
+	background-size: cover; 
+    background-position: center;
+}
+
+.uxcat {
+    width: auto;
+	color: white;
+	background:  radial-gradient(
+      rgba(255, 97, 97, 0), 
+      rgba(255, 97, 97, 0)
+    ), url('../img/UX.png');
+	background-size: cover; 
+    background-position: center;
+}
+
+.creativecat {
+    width: auto;
+	color: white;
+	background:  radial-gradient(
+      rgba(255, 97, 97, 0), 
+      rgba(255, 97, 97, 0)
+    ), url('../img/Creative.png');
 	background-size: cover; 
     background-position: center;
 }
@@ -1391,8 +1413,8 @@ header .Styled {
     width: auto;
 	color: white;
 	background:  radial-gradient(
-      rgba(255, 97, 97, 0.55), 
-      rgba(255, 97, 97, 0.7)
+      rgba(255, 97, 97, 0.5), 
+      rgba(255, 97, 97, 0.1)
     ), url('../img/experiments/Djams/nutanix/cover.jpg');
 	background-size: cover; 
     background-position: center;
@@ -1402,8 +1424,8 @@ header .Styled {
     width: auto;
 	color: white;
 	background:  radial-gradient(
-      rgba(255, 97, 97, 0.55), 
-      rgba(255, 97, 97, 0.7)
+      rgba(255, 97, 97, 0.5), 
+      rgba(255, 97, 97, 0.1)
     ), url('../img/experiments/Djams/duo/cover.jpg');
 	background-size: cover; 
     background-position: center;
@@ -1413,11 +1435,11 @@ header .Styled {
     width: auto;
 	color: white;
 	background:  radial-gradient(
-      rgba(255, 97, 97, 0.55), 
-      rgba(255, 97, 97, 0.7)
+      rgba(255, 97, 97, 0.5), 
+      rgba(255, 97, 97, 0.1)
     ), url('../img/pages/termreport/page2.png');
 	background-size: cover; 
-    background-position: center;
+    background-position: left;
 }
 
 .ixd:hover {
@@ -1428,6 +1450,26 @@ header .Styled {
 	background-size: cover;  
     background-position: center;
 }
+
+.uxcat:hover {
+   background:  radial-gradient(
+      rgba(255, 97, 97, 0), 
+      rgba(255, 97, 97, 0)
+    ), url('../img/UX.png');
+	background-size: cover;  
+    background-position: center;
+}
+
+.creativecat:hover {
+   background:  radial-gradient(
+      rgba(255, 97, 97, 0), 
+      rgba(255, 97, 97, 0)
+    ), url('../img/Creative.png');
+	background-size: cover;  
+    background-position: center;
+}
+
+
 
 .nutanix:hover {
    background:  radial-gradient(
@@ -1467,8 +1509,8 @@ header .Styled {
     width: auto;
 	color: white;
 	background:  radial-gradient(
-      rgba(255, 97, 97, 0.55), 
-      rgba(255, 97, 97, 0.7)
+      rgba(255, 97, 97, 0.5), 
+      rgba(255, 97, 97, 0.1)
     ), url('../img/pages/tixd/cover.png');
 	background-size: cover; 
     background-position: center;
@@ -1498,8 +1540,8 @@ header .Styled {
     width: auto;
 	color: white;
 	background:  radial-gradient(
-      rgba(255, 97, 97, 0.55), 
-      rgba(255, 97, 97, 0.7)
+      rgba(255, 97, 97, 0.5), 
+      rgba(255, 97, 97, 0.1)
     ), url('../img/experiments/Djams/fb/cover.jpg');
 	background-size: cover; 
     background-position: center;
@@ -1528,8 +1570,8 @@ header .Styled {
     width: auto;
 	color: white;
 	background:  radial-gradient(
-      rgba(255, 97, 97, 0.55), 
-      rgba(255, 97, 97, 0.7)
+      rgba(255, 97, 97, 0.5), 
+      rgba(255, 97, 97, 0.1)
     ), url('../img/pages/vrgame/des/cover3.png');
 	background-size: cover; 
     background-position: center;
@@ -1548,8 +1590,8 @@ header .Styled {
     width: auto;
 	color: white;
 	background:  radial-gradient(
-      rgba(255, 97, 97, 0.55), 
-      rgba(255, 97, 97, 0.7)
+      rgba(255, 97, 97, 0.5), 
+      rgba(255, 97, 97, 0.1)
     ), url('../img/experiments/crit/cover.jpg');
 	background-size: cover; 
     background-position: center;
@@ -1588,8 +1630,8 @@ header .Styled {
         width: auto;
 	color: white;
 	background:  radial-gradient(
-      rgba(255, 97, 97, 0.55), 
-      rgba(255, 97, 97, 0.7)
+      rgba(255, 97, 97, 0.5), 
+      rgba(255, 97, 97, 0.1)
     ), url('../img/experiments/scifi/cover.png');
 	background-size: cover; 
     background-position: center;
@@ -1599,8 +1641,8 @@ header .Styled {
         width: auto;
 	color: white;
 	background:  radial-gradient(
-      rgba(255, 97, 97, 0.55), 
-      rgba(255, 97, 97, 0.7)
+      rgba(255, 97, 97, 0.5), 
+      rgba(255, 97, 97, 0.1)
     ), url('../img/experiments/laser/cover.png');
 	background-size: cover; 
     background-position: center;
@@ -1738,3 +1780,25 @@ header .critheader {
 	font-family: 'Josefin Sans', sans-serif;
     font-size: 18px;
 }
+
+.categoryhoverL {
+    width: 100%;
+	background:  radial-gradient(  
+      rgba(255, 97, 97, 0.55), 
+      rgba(255, 97, 97, 0.7)
+    ), url('../img/categoryL.png');
+	background-size: cover; 
+    background-position: center;
+}
+
+
+.categoryhoverL:hover {
+    background:  radial-gradient(
+      rgba(255, 97, 97, 0.9), 
+      rgba(255, 97, 97, 0.8)
+    ), url('../img/categoryL.png');
+	background-size: cover;  
+    background-position: center;
+}
+
+
