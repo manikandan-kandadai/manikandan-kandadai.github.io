@@ -515,6 +515,18 @@ section {
 	background-color: white;
 }
 
+.service2 {
+	width: 100%;
+	height: 390.4px;
+	margin: 40px 0;
+	text-align: center;
+/*	border: 2px solid #2f2f2f;
+*/	-webkit-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	box-shadow: -1px 0px 8px rgba(0, 0, 0, 0.4);
+	background-color: white;
+}
+
 .service .icon-holder {
 	position: relative;
 	top: 100px;
@@ -538,6 +550,11 @@ section {
 }
 
 .service:hover {
+	background-color: rgba(255, 97, 97, 0.7);
+    box-shadow: -1px 0px 8px rgba(0, 0, 0, 0.8);
+}
+
+.service2:hover {
 	background-color: rgba(255, 97, 97, 0.7);
     box-shadow: -1px 0px 8px rgba(0, 0, 0, 0.8);
 }
@@ -1393,7 +1410,8 @@ header .Styled {
       rgba(255, 97, 97, 0), 
       rgba(255, 97, 97, 0)
     ), url('../img/UX.png');
-	background-size: contain; 
+	background-size: cover; 
+    background-repeat: no-repeat;
     background-position: center;
 }
 
@@ -1404,7 +1422,8 @@ header .Styled {
       rgba(255, 97, 97, 0), 
       rgba(255, 97, 97, 0)
     ), url('../img/Creative.png');
-	background-size: contain; 
+		background-size: cover; 
+    background-repeat: no-repeat;
     background-position: center;
 }
 
@@ -1456,7 +1475,8 @@ header .Styled {
       rgba(255, 97, 97, 0), 
       rgba(255, 97, 97, 0)
     ), url('../img/UX.png');
-	background-size: contain;  
+		background-size: cover; 
+    background-repeat: no-repeat;
     background-position: center;
 }
 
@@ -1465,7 +1485,8 @@ header .Styled {
       rgba(255, 97, 97, 0), 
       rgba(255, 97, 97, 0)
     ), url('../img/Creative.png');
-	background-size: contain;
+	background-size: cover; 
+    background-repeat: no-repeat;
     background-position: center;
 }
 
@@ -1802,3 +1823,7 @@ header .critheader {
 }
 
 
+
+.service2 {
+    
+}
