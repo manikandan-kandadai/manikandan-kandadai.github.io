@@ -1521,7 +1521,7 @@ header .Styled {
       rgba(255, 97, 97, 0.8)
     ), url('../img/pages/termreport/page2.png');
 	background-size: cover;  
-    background-position: center;
+    background-position: Left;
 }
 
 
