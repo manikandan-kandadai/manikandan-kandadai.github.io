@@ -244,18 +244,23 @@ a,button{outline: none!important;} /* Prevent ugly blue glow on chrome and safar
 
 /* Bloc text custom styling */
 
-#bloc-0 p{
-	font-size: 36px;
-}
 #bloc-2 p{
 	font-size: 20px;
+}
+#bloc-4 h1{
+	font-weight: 700;
+	font-family: PT Serif;
+}
+#bloc-5 h2{
+	font-weight: 700;
+	font-family: PT Serif;
 }
 #bloc-5 p{
 	font-size: 16px;
 }
 #bloc-6 h2{
-	font-weight: 100;
-	font-family: Helvetica;
+	font-weight: 700;
+	font-family: PT Serif;
 }
 #bloc-7 p{
 	font-size: 16px;
@@ -269,8 +274,16 @@ a,button{outline: none!important;} /* Prevent ugly blue glow on chrome and safar
 #bloc-10 p{
 	font-size: 16px;
 }
+#bloc-11 h2{
+	font-weight: 700;
+	font-family: PT Serif;
+}
 #bloc-11 p{
 	font-size: 16px;
+}
+#bloc-12 h2{
+	font-weight: 700;
+	font-family: PT Serif;
 }
 #bloc-12 p{
 	font-size: 16px;
@@ -284,10 +297,17 @@ a,button{outline: none!important;} /* Prevent ugly blue glow on chrome and safar
 #bloc-15 p{
 	font-size: 16px;
 }
+#bloc-16 p{
+	font-size: 16px;
+}
+#bloc-17 h2{
+	font-weight: 700;
+	font-family: PT Serif;
+}
 #bloc-17 p{
 	font-size: 16px;
 }
-#bloc-18 p{
+#bloc-24 p{
 	font-size: 16px;
 }
 #bloc-25 p{
@@ -296,15 +316,23 @@ a,button{outline: none!important;} /* Prevent ugly blue glow on chrome and safar
 #bloc-26 p{
 	font-size: 16px;
 }
-#bloc-27 p{
+#bloc-28 h1{
+	font-weight: 400;
+	font-family: PT Serif;
+}
+#bloc-29 h2{
+	font-weight: 300;
+	font-family: PT Serif;
+}
+#bloc-29 p{
 	font-size: 16px;
 }
-#bloc-30 p{
-	font-size: 16px;
+#bloc-30 h2{
+	font-weight: 700;
+	font-family: PT Serif;
 }
-#bloc-31 h2{
-	font-weight: 100;
-	font-family: Helvetica;
+#bloc-31 p{
+	font-size: 16px;
 }
 #bloc-32 p{
 	font-size: 16px;
@@ -312,7 +340,11 @@ a,button{outline: none!important;} /* Prevent ugly blue glow on chrome and safar
 #bloc-33 p{
 	font-size: 16px;
 }
-#bloc-34 p{
+#bloc-34 h2{
+	font-weight: 700;
+	font-family: PT Serif;
+}
+#bloc-35 p{
 	font-size: 16px;
 }
 #bloc-36 p{
@@ -327,21 +359,37 @@ a,button{outline: none!important;} /* Prevent ugly blue glow on chrome and safar
 #bloc-39 p{
 	font-size: 16px;
 }
+#bloc-40 h2{
+	font-weight: 700;
+	font-family: PT Serif;
+}
 #bloc-40 p{
 	font-size: 16px;
+}
+#bloc-41 h2{
+	font-weight: 700;
+	font-family: PT Serif;
 }
 #bloc-41 p{
 	font-size: 16px;
 }
-#bloc-42 p{
+#bloc-44 h1{
+	font-weight: 700;
+	font-family: PT Serif;
+}
+#bloc-45 h2{
+	font-weight: 700;
+	font-family: PT Serif;
+}
+#bloc-45 p{
 	font-size: 16px;
 }
-#bloc-46 p{
-	font-size: 16px;
+#bloc-46 h2{
+	font-weight: 700;
+	font-family: PT Serif;
 }
-#bloc-47 h2{
-	font-weight: 100;
-	font-family: Helvetica;
+#bloc-47 p{
+	font-size: 16px;
 }
 #bloc-48 p{
 	font-size: 16px;
@@ -361,21 +409,29 @@ a,button{outline: none!important;} /* Prevent ugly blue glow on chrome and safar
 #bloc-53 p{
 	font-size: 16px;
 }
+#bloc-54 h2{
+	font-weight: 700;
+	font-family: PT Serif;
+}
 #bloc-54 p{
 	font-size: 16px;
+}
+#bloc-55 h2{
+	font-weight: 700;
+	font-family: PT Serif;
 }
 #bloc-55 p{
 	font-size: 16px;
 }
-#bloc-56 p{
+#bloc-59 p{
 	font-size: 16px;
 }
-#bloc-60 p{
-	font-size: 16px;
-}
-#bloc-61 h2{
+#bloc-60 h2{
 	font-weight: 100;
 	font-family: Helvetica;
+}
+#bloc-61 p{
+	font-size: 16px;
 }
 #bloc-62 p{
 	font-size: 16px;
@@ -398,15 +454,15 @@ a,button{outline: none!important;} /* Prevent ugly blue glow on chrome and safar
 #bloc-68 p{
 	font-size: 16px;
 }
-#bloc-69 p{
+#bloc-72 p{
 	font-size: 16px;
 }
-#bloc-73 p{
-	font-size: 16px;
-}
-#bloc-74 h2{
+#bloc-73 h2{
 	font-weight: 100;
 	font-family: Helvetica;
+}
+#bloc-74 p{
+	font-size: 16px;
 }
 #bloc-75 p{
 	font-size: 16px;
@@ -414,7 +470,7 @@ a,button{outline: none!important;} /* Prevent ugly blue glow on chrome and safar
 #bloc-76 p{
 	font-size: 16px;
 }
-#bloc-77 p{
+#bloc-78 p{
 	font-size: 16px;
 }
 #bloc-79 p{
@@ -435,53 +491,17 @@ a,button{outline: none!important;} /* Prevent ugly blue glow on chrome and safar
 #bloc-84 p{
 	font-size: 16px;
 }
-#bloc-85 p{
-	font-size: 16px;
+#bloc-88 h1{
+	font-weight: 700;
+	font-family: PT Serif;
 }
-#bloc-88 h4{
-	font-size: 20px;
-	line-height: 32.5px;
+#bloc-91 h1{
+	font-weight: 700;
+	font-family: PT Serif;
 }
-#bloc-88 p{
-	font-size: 16px;
-}
-#bloc-89 h2{
-	font-size: 50px;
-}
-#bloc-89 h3{
-	font-size: 20px;
-}
-#bloc-89 p{
-	font-size: 16px;
-}
-#bloc-90 h2{
-	font-size: 50px;
-}
-#bloc-90 h3{
-	font-size: 20px;
-}
-#bloc-90 p{
-	font-size: 16px;
-}
-#bloc-91 h2{
-	font-size: 50px;
-	line-height: 55px;
-}
-#bloc-91 h3{
-	font-size: 20px;
-}
-#bloc-91 p{
-	font-size: 16px;
-}
-#bloc-92 h2{
-	font-size: 50px;
-	line-height: 55px;
-}
-#bloc-92 h3{
-	font-size: 20px;
-}
-#bloc-92 p{
-	font-size: 16px;
+#bloc-93 h1{
+	font-weight: 700;
+	font-family: PT Serif;
 }
 
 /* = NavBar
@@ -879,9 +899,6 @@ iframe{
 .blocsapp-device-iphone6.iphone6-silver{
 	background-image:url("img/Apple-iPhone-6s-Silver.png");
 }
-.blocsapp-device-iphone6.iphone6-gold{
-	background-image:url("img/Apple-iPhone-6s-Gold.png");
-}
 /* = iMac Device
 -------------------------------------------------------------- */
 
@@ -1113,11 +1130,11 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 }
 /* Text colour styles */
 
-.tc-caribbean-green{
-	color:#10BC9B!important;
-}
 .tc-gray-x11-gray{
 	color:#BEBBB9!important;
+}
+.tc-caribbean-green{
+	color:#10BC9B!important;
 }
 .tc-white{
 	color:#FFFFFF!important;
@@ -1161,15 +1178,6 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 .bg-tile-d-bg{
 	background-image:url("img/tile-d-bg.png");
 }
-.bg-city{
-	background-image:url("img/city.jpg");
-}
-.bg-desk-equipment{
-	background-image:url("img/desk-equipment.jpg");
-}
-.bg-city-overlay{
-	background-image:url("img/city-overlay.png");
-}
 .bg-path-overlay{
 	background-image:url("img/path-overlay.png");
 }
@@ -1179,12 +1187,6 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 .bg-sanfran{
 	background-image:url("img/sanfran.jpg");
 }
-.bg-apple-watch{
-	background-image:url("img/apple-watch.jpg");
-}
-.bg-map{
-	background-image:url("img/map.jpg");
-}
 .bg-forrest{
 	background-image:url("img/forrest.jpg");
 }
@@ -1193,9 +1195,6 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 }
 .bg-lines-v2-bg{
 	background-image:url("img/lines-v2-bg.png");
-}
-.bg-design-20proc{
-	background-image:url("img/design%20proc.jpg");
 }
 .bg-forrest{
 	background-image:url("img/forrest.jpg");
@@ -1209,26 +1208,14 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 .bg-camera{
 	background-image:url("img/camera.jpg");
 }
-.bg-map{
-	background-image:url("img/map.jpg");
-}
 .bg-lines-dr-bg{
 	background-image:url("img/lines-dr-bg.png");
-}
-.bg-desk-equipment{
-	background-image:url("img/desk-equipment.jpg");
 }
 .bg-squared-d-bg{
 	background-image:url("img/squared-d-bg.png");
 }
 .bg-lines-v2-bg{
 	background-image:url("img/lines-v2-bg.png");
-}
-.bg-design-20proc{
-	background-image:url("img/design%20proc.jpg");
-}
-.bg-map{
-	background-image:url("img/map.jpg");
 }
 .bg-forrest{
 	background-image:url("img/forrest.jpg");
@@ -1245,9 +1232,6 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 .bg-camera{
 	background-image:url("img/camera.jpg");
 }
-.bg-desk-equipment{
-	background-image:url("img/desk-equipment.jpg");
-}
 .bg-COVER-LR{
 	background-image:url("img/COVER_LR.png");
 }
@@ -1256,9 +1240,6 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 }
 .bg-forrest{
 	background-image:url("img/forrest.jpg");
-}
-.bg-desk-equipment{
-	background-image:url("img/desk-equipment.jpg");
 }
 .bg-city{
 	background-image:url("img/city.jpg");
@@ -1297,28 +1278,34 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	background-image:url("img/cover.png");
 }
 .bg-cover{
-	background-image:url('img/cover.png');
+	background-image:url("img/cover.png");
 }
 .bg-lines-v2-bg{
-	background-image:url('img/lines-v2-bg.png');
+	background-image:url("img/lines-v2-bg.png");
 }
 .bg-lines-dl2-bg{
-	background-image:url('img/lines-dl2-bg.png');
+	background-image:url("img/lines-dl2-bg.png");
 }
 .bg-crosses-s-bg{
-	background-image:url('img/crosses-s-bg.png');
+	background-image:url("img/crosses-s-bg.png");
 }
 .bg-g2{
-	background-image:url('img/g2.jpg');
+	background-image:url("img/g2.jpg");
 }
 .bg-dots-bg{
-	background-image:url('img/dots-bg.png');
+	background-image:url("img/dots-bg.png");
 }
 .bg-lines-dr-bg{
-	background-image:url('img/lines-dr-bg.png');
+	background-image:url("img/lines-dr-bg.png");
 }
 .bg-lines-dl{
-	background-image:url('img/lines-dl.png');
+	background-image:url("img/lines-dl.png");
+}
+.bg-squared-d-bg{
+	background-image:url('img/squared-d-bg.png');
+}
+.bg-camera-overlay{
+	background-image:url('img/camera-overlay.png');
 }
 
 
