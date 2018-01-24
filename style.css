@@ -100,6 +100,28 @@ a,button{outline: none!important;} /* Prevent ugly blue glow on chrome and safar
 }
 
 
+/* Group Styles */
+
+.bloc-group{
+	display:flex;
+}
+.bloc-group .bloc{
+	flex: 1;
+}
+.bloc-tile-2{
+	width:50%;
+}
+.bloc-tile-3{
+	width:33.33333333%;
+}
+.bloc-tile-4{
+	width:25%;
+}
+.bloc-tile-2 .container, .bloc-tile-3 .container, .bloc-tile-4 .container{
+	width:100%;
+}
+
+
 /* Background Styles */
 
 .bg-center,.bg-l-edge,.bg-r-edge,.bg-t-edge,.bg-b-edge,.bg-tl-edge,.bg-bl-edge,.bg-tr-edge,.bg-br-edge,.bg-repeat{
@@ -258,12 +280,9 @@ a,button{outline: none!important;} /* Prevent ugly blue glow on chrome and safar
 #bloc-5 p{
 	font-size: 16px;
 }
-#bloc-6 h2{
+#bloc-7 h2{
 	font-weight: 700;
 	font-family: PT Serif;
-}
-#bloc-7 p{
-	font-size: 16px;
 }
 #bloc-8 p{
 	font-size: 16px;
@@ -274,10 +293,6 @@ a,button{outline: none!important;} /* Prevent ugly blue glow on chrome and safar
 #bloc-10 p{
 	font-size: 16px;
 }
-#bloc-11 h2{
-	font-weight: 700;
-	font-family: PT Serif;
-}
 #bloc-11 p{
 	font-size: 16px;
 }
@@ -287,6 +302,10 @@ a,button{outline: none!important;} /* Prevent ugly blue glow on chrome and safar
 }
 #bloc-12 p{
 	font-size: 16px;
+}
+#bloc-13 h2{
+	font-weight: 700;
+	font-family: PT Serif;
 }
 #bloc-13 p{
 	font-size: 16px;
@@ -327,28 +346,9 @@ a,button{outline: none!important;} /* Prevent ugly blue glow on chrome and safar
 #bloc-29 p{
 	font-size: 16px;
 }
-#bloc-30 h2{
+#bloc-36 h2{
 	font-weight: 700;
 	font-family: PT Serif;
-}
-#bloc-31 p{
-	font-size: 16px;
-}
-#bloc-32 p{
-	font-size: 16px;
-}
-#bloc-33 p{
-	font-size: 16px;
-}
-#bloc-34 h2{
-	font-weight: 700;
-	font-family: PT Serif;
-}
-#bloc-35 p{
-	font-size: 16px;
-}
-#bloc-36 p{
-	font-size: 16px;
 }
 #bloc-37 p{
 	font-size: 16px;
@@ -363,23 +363,17 @@ a,button{outline: none!important;} /* Prevent ugly blue glow on chrome and safar
 	font-weight: 700;
 	font-family: PT Serif;
 }
-#bloc-40 p{
-	font-size: 16px;
-}
-#bloc-41 h2{
-	font-weight: 700;
-	font-family: PT Serif;
-}
 #bloc-41 p{
 	font-size: 16px;
 }
-#bloc-44 h1{
-	font-weight: 700;
-	font-family: PT Serif;
+#bloc-42 p{
+	font-size: 16px;
 }
-#bloc-45 h2{
-	font-weight: 700;
-	font-family: PT Serif;
+#bloc-43 p{
+	font-size: 16px;
+}
+#bloc-44 p{
+	font-size: 16px;
 }
 #bloc-45 p{
 	font-size: 16px;
@@ -388,78 +382,90 @@ a,button{outline: none!important;} /* Prevent ugly blue glow on chrome and safar
 	font-weight: 700;
 	font-family: PT Serif;
 }
+#bloc-46 p{
+	font-size: 16px;
+}
+#bloc-47 h2{
+	font-weight: 700;
+	font-family: PT Serif;
+}
 #bloc-47 p{
 	font-size: 16px;
 }
-#bloc-48 p{
-	font-size: 16px;
+#bloc-50 h1{
+	font-weight: 700;
+	font-family: PT Serif;
 }
-#bloc-49 p{
-	font-size: 16px;
-}
-#bloc-50 p{
-	font-size: 16px;
+#bloc-51 h2{
+	font-weight: 700;
+	font-family: PT Serif;
 }
 #bloc-51 p{
 	font-size: 16px;
 }
-#bloc-52 p{
-	font-size: 16px;
-}
-#bloc-53 p{
-	font-size: 16px;
-}
-#bloc-54 h2{
+#bloc-53 h2{
 	font-weight: 700;
 	font-family: PT Serif;
 }
 #bloc-54 p{
 	font-size: 16px;
 }
-#bloc-55 h2{
-	font-weight: 700;
-	font-family: PT Serif;
-}
 #bloc-55 p{
+	font-size: 16px;
+}
+#bloc-56 p{
+	font-size: 16px;
+}
+#bloc-57 p{
+	font-size: 16px;
+}
+#bloc-58 p{
 	font-size: 16px;
 }
 #bloc-59 p{
 	font-size: 16px;
 }
-#bloc-60 h2{
-	font-weight: 100;
-	font-family: Helvetica;
+#bloc-60 p{
+	font-size: 16px;
+}
+#bloc-61 h2{
+	font-weight: 700;
+	font-family: PT Serif;
 }
 #bloc-61 p{
 	font-size: 16px;
 }
+#bloc-62 h2{
+	font-weight: 700;
+	font-family: PT Serif;
+}
 #bloc-62 p{
-	font-size: 16px;
-}
-#bloc-63 p{
-	font-size: 16px;
-}
-#bloc-64 p{
-	font-size: 16px;
-}
-#bloc-65 p{
 	font-size: 16px;
 }
 #bloc-66 p{
 	font-size: 16px;
 }
-#bloc-67 p{
-	font-size: 16px;
+#bloc-67 h2{
+	font-weight: 100;
+	font-family: Helvetica;
 }
 #bloc-68 p{
+	font-size: 16px;
+}
+#bloc-69 p{
+	font-size: 16px;
+}
+#bloc-70 p{
+	font-size: 16px;
+}
+#bloc-71 p{
 	font-size: 16px;
 }
 #bloc-72 p{
 	font-size: 16px;
 }
-#bloc-73 h2{
-	font-weight: 100;
-	font-family: Helvetica;
+#bloc-73 p{
+	font-size: 16px;
 }
 #bloc-74 p{
 	font-size: 16px;
@@ -467,17 +473,12 @@ a,button{outline: none!important;} /* Prevent ugly blue glow on chrome and safar
 #bloc-75 p{
 	font-size: 16px;
 }
-#bloc-76 p{
-	font-size: 16px;
-}
-#bloc-78 p{
-	font-size: 16px;
-}
 #bloc-79 p{
 	font-size: 16px;
 }
-#bloc-80 p{
-	font-size: 16px;
+#bloc-80 h2{
+	font-weight: 100;
+	font-family: Helvetica;
 }
 #bloc-81 p{
 	font-size: 16px;
@@ -488,18 +489,40 @@ a,button{outline: none!important;} /* Prevent ugly blue glow on chrome and safar
 #bloc-83 p{
 	font-size: 16px;
 }
-#bloc-84 p{
+#bloc-85 p{
 	font-size: 16px;
 }
-#bloc-88 h1{
+#bloc-86 p{
+	font-size: 16px;
+}
+#bloc-87 p{
+	font-size: 16px;
+}
+#bloc-88 p{
+	font-size: 16px;
+}
+#bloc-89 p{
+	font-size: 16px;
+}
+#bloc-90 p{
+	font-size: 16px;
+}
+#bloc-91 p{
+	font-size: 16px;
+}
+#bloc-94 h1{
 	font-weight: 700;
 	font-family: PT Serif;
 }
-#bloc-91 h1{
+#bloc-115 h1{
 	font-weight: 700;
 	font-family: PT Serif;
 }
-#bloc-93 h1{
+#bloc-119 h1{
+	font-weight: 700;
+	font-family: PT Serif;
+}
+#bloc-121 h1{
 	font-weight: 700;
 	font-family: PT Serif;
 }
@@ -853,10 +876,6 @@ iframe{
 
 .no-shadows .carousel-control.left, .no-shadows .carousel-control.right{
 	background-image: none;
-}
-
-.hide-indicators{
-	display:none;
 }
 
 
@@ -1244,6 +1263,9 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 .bg-city{
 	background-image:url("img/city.jpg");
 }
+.bg-lines-dr2-bg{
+	background-image:url("img/lines-dr2-bg.png");
+}
 .bg-dots-bg{
 	background-image:url("img/dots-bg.png");
 }
@@ -1286,6 +1308,9 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 .bg-lines-dl2-bg{
 	background-image:url("img/lines-dl2-bg.png");
 }
+.bg-lines-dr2-bg{
+	background-image:url("img/lines-dr2-bg.png");
+}
 .bg-crosses-s-bg{
 	background-image:url("img/crosses-s-bg.png");
 }
@@ -1302,10 +1327,40 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	background-image:url("img/lines-dl.png");
 }
 .bg-squared-d-bg{
-	background-image:url('img/squared-d-bg.png');
+	background-image:url("img/squared-d-bg.png");
 }
 .bg-camera-overlay{
-	background-image:url('img/camera-overlay.png');
+	background-image:url("img/camera-overlay.png");
+}
+.bg-lines-v2-bg{
+	background-image:url("img/lines-v2-bg.png");
+}
+.bg-1378{
+	background-image:url('img/1378.jpg');
+}
+.bg-lines-dr-bg{
+	background-image:url('img/lines-dr-bg.png');
+}
+.bg-lines-v2-bg{
+	background-image:url('img/lines-v2-bg.png');
+}
+.bg-lines-dl2-bg{
+	background-image:url('img/lines-dl2-bg.png');
+}
+.bg-lines-dr2-bg{
+	background-image:url('img/lines-dr2-bg.png');
+}
+.bg-dots-bg{
+	background-image:url('img/dots-bg.png');
+}
+.bg-tile-d-bg{
+	background-image:url('img/tile-d-bg.png');
+}
+.bg-squared-d-bg{
+	background-image:url('img/squared-d-bg.png');
+}
+.bg-crosses-s-bg{
+	background-image:url('img/crosses-s-bg.png');
 }
 
 
@@ -1641,5 +1696,10 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 .blocs-team-first-social{
 	margin-left:41%;
 }
- }
+ 
+/* Mobile Row Margin Offsets */
+.voffset-xs{
+	margin-top:30px;
+}
+}
 
