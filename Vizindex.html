@@ -1,0 +1,840 @@
+<html>
+<head>
+  <title>Hatecrime Distribution in the United States between 2013 and 2016</title> <!-- can have a placeholder in title -->
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- CSS, javascript and font -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+  <!-- Latest compiled and minified Bootstrap JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <!-- Initialize Bootstrap functionality -->
+    <script>
+    // Initialize tooltip component
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+
+    // Initialize popover component
+    $(function () {
+      $('[data-toggle="popover"]').popover()
+    })
+    </script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <script src="https://d3js.org/d3.v3.min.js"></script>
+  <script src="https://d3js.org/topojson.v2.min.js"></script>
+<script src="https://d3js.org/d3-collection.v1.min.js"></script>
+<script src="https://d3js.org/d3-dispatch.v1.min.js"></script>
+<script src="https://d3js.org/d3-dsv.v1.min.js"></script>
+<script src="https://d3js.org/d3-request.v1.min.js"></script>
+  <script src="https://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="https://code.highcharts.com/modules/treemap.js"></script>
+  <script src="https://code.highcharts.com/modules/data.js"></script>
+  <script src="https://code.highcharts.com/modules/exporting.js"></script>
+  <script src="tree.js" type="application/javascript"></script>
+  <link rel="stylesheet" href="custom.css">
+  <link href="https://fonts.googleapis.com/css?family=Barlow|Spectral+SC:300,400|Cormorant+Garamond" rel="stylesheet">
+</head>
+
+<body>
+<div class="container">
+
+  <div class="row">
+    <div class="col-md-2 col-lg-2"></div>
+    <div class="col-md-8 col-lg-8 explanation-part1 title-div">
+      <h1 class="viz-title">
+        Hate Crimes in USA 2013-2016
+      </h1>
+      <h4 class="viz-title">
+        <!-- style="border-bottom:1px solid #ddd; height: 45px" -->
+        By <b>Pallavi, Ruta, Mauli, Olivia, Mani</b><br>
+      </h4>
+      <br>
+    </div>
+    <div class="col-md-2 col-lg-2"></div>
+  </div> <!-- row 1 ends -->
+
+  <div class="row">
+    <div class="col-md-2 col-lg-2"></div>
+    <div class="col-md-8 col-lg-8 explanation-part1">
+      <br>
+      <h2>On the rise?</h2>
+      <p>Everyday, we see reports of crime, polarized political tumult, and biased-charged incidents both within and outside of the U.S.. Social media and access to other internet sites make these events appear to be growing in numbers and intensity, both through the increase of contentious political agendas, fake news reports, and ease of finding and sharing information with others. One such type of crime that encompasses all of these elements are <strong>hate crimes</strong>, and they are shown to be <strong>on the rise</strong> in the United States within recent years.</p>
+
+
+      <p>The state of Michigan especially has seen an increase in the number of <strong>reported</strong> hate crimes within the past few years. With various groups becoming emboldened to speak out on their beliefs, even traditionally ‘liberal’ communities, such as the University of Michigan, still experience what appears to be a spike in the amount of hate-related biases and crimes. Given the recent climate:<a href="https://record.umich.edu/articles/u-m-will-consider-renting-space-white-supremacist-speaker" target="_blank"></a> of the University’s campus and that of the U.S., the issue is as prevalent as ever.</p>
+
+      <h2>FBI Reported Hate Crimes</h2>
+      <p>The purpose of this project is to <strong>explore the distribution of reported hate crimes</strong> and their motivations in the United States from 2013-2016. Furthermore, we want to show geographical differences for various years and explore potential reasonings and insights as to why these differences exist. </p>
+      <p>The data used for this project comes from the United States Federal Bureau of Investigation and can be publicly accessed at the FBI Hate Crime<a href="https://ucr.fbi.gov/hate-crime/" target="_blank"><nobr> website</nobr></a>. The FBI categorizes the hate crimes into <strong> 6 motivation types </strong>: race and ethnicity, religion, sexual orientation, disability, gender, and gender identity. Below is a brief description of each motivation type taken from the FBI Hate Crime websites:</p>
+
+      <ul>
+        <li><strong>Race/ethnicity</strong>: Categories include White, Black or African American, American Indian or Alaska Native, Asian, and Native Hawaiian or other Pacific Islander. The ethnic designations of “Hispanic or Latino” and “Not Hispanic or Latino are also used.</li>
+
+        <li><strong>Religion</strong>: Categories include anti-Jewish, anti-Catholic, anti-Protestant, anti-Islamic, anti-Atheism/Agnosticism, anti-Buddhist, anti-Eastern Orthodox, anti-Hindu, anti-Jehovah’s Witness, anti-Mormon, anti-Other Christian, and anti-Sikh, as well as anti-Arab bias motivation, anti-other religion, and anti-multiple religions. </li>
+
+        <li><strong>Sexual orientation</strong>: Categories include anti-gay; anti-lesbian; anti-lesbian, gay, bisexual, or transgender (mixed group); anti-heterosexual, and anti-bisexual.</li>
+
+        <li><strong>Disability</strong>: Categories include anti-physical and anti-mental.</li>
+
+        <li><strong>Gender</strong>: Categories include anti-male and anti-female</li>
+
+        <li><strong>Gender Identity</strong>: Categories include anti-transgender and anti-gender non-conforming</li>
+        </ul>
+
+      <h2>Hate Crimes in the U.S. from 2013-2016</h2>
+      <p><strong>Explore the visualizations below to get a sense of the distribution of the FBI’s reported hate crime dataset.</strong> Use the time slider to update the U.S. map and the motivation breakdown treemap for a given year; click on a state to explore further statistics for the 6 motivations for that given year. </p>
+
+      <p> The populations for the U.S. have been normalized using the equations below:</p>
+      <p> Total reported population by the agencies / Total reported population of all agencies = x </br>
+      (Total hate crimes per state reported by agencies / x) * 100 = Normalized rate</p>
+
+    </div>
+    <div class="col-md-2 col-lg-2"></div>
+  </div> <!-- row 2 ends -->
+
+  <div class="row">
+    <div class="col-md-12 col-lg-12">
+      <div class="time-slider-div">
+        <label for="time-slider">
+          <br>
+          <span>Year</span>
+          <input type="range" min="1" max="4" id="time-slider" class="range-slider" value="4" step="1" list="steplist">
+          <datalist id="steplist">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+          </datalist>
+          <span id="time-slider-value">2016</span>
+        </label>
+      </div>
+      </div>
+    <div class="col-md-12 col-lg-12">
+      <div class="viz1_tootlip"></div>
+      <div class="viz1_map"></div>
+    </div>
+  </div> <!-- row 3 ends -->
+
+
+
+  <div class="dropdown mt-2 col-md-12 col-lg-12">
+      <p class = "text-center" id = "statewise">Statewise Hate Crimes by Motivation</p>
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="stateselector">Select State</button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#viz2" id="Alabama">Alabama</a>
+            <a class="dropdown-item" href="#viz2" id="Alaska">Alaska</a>
+            <a class="dropdown-item" href="#viz2" id="Arizona">Arizona</a>
+            <a class="dropdown-item" href="#viz2" id="Arkansas">Arkansas</a>
+            <a class="dropdown-item" href="#viz2" id="California">California</a>
+            <a class="dropdown-item" href="#viz2" id="Colorado">Colorado</a>
+            <a class="dropdown-item" href="#viz2" id="Connecticut">Connecticut</a>
+            <a class="dropdown-item" href="#viz2" id="Delaware">Delaware</a>
+            <a class="dropdown-item" href="#viz2" id="Florida">Florida</a>
+            <a class="dropdown-item" href="#viz2" id="Georgia">Georgia</a>
+            <a class="dropdown-item" href="#viz2" id="Idaho">Idaho</a>
+            <a class="dropdown-item" href="#viz2" id="Illinois">Illinois</a>
+            <a class="dropdown-item" href="#viz2" id="Indiana">Indiana</a>
+            <a class="dropdown-item" href="#viz2" id="Iowa">Iowa</a>
+            <a class="dropdown-item" href="#viz2" id="Kansas">Kansas</a>
+            <a class="dropdown-item" href="#viz2" id="Kentucky">Kentucky</a>
+            <a class="dropdown-item" href="#viz2" id="Louisiana">Louisiana</a>
+            <a class="dropdown-item" href="#viz2" id="Maine">Maine</a>
+            <a class="dropdown-item" href="#viz2" id="Maryland">Maryland</a>
+            <a class="dropdown-item" href="#viz2" id="Massachusetts">Massachusetts</a>
+            <a class="dropdown-item" href="#viz2" id="Michigan">Michigan</a>
+            <a class="dropdown-item" href="#viz2" id="Minnesota">Minnesota</a>
+            <a class="dropdown-item" href="#viz2" id="Mississippi">Mississippi</a>
+            <a class="dropdown-item" href="#viz2" id="Missouri">Missouri</a>
+            <a class="dropdown-item" href="#viz2" id="Montana">Montana</a>
+            <a class="dropdown-item" href="#viz2" id="Nebraska">Nebraska</a>
+            <a class="dropdown-item" href="#viz2" id="Nevada">Nevada</a>
+            <a class="dropdown-item" href="#viz2" id="New Hampshire">New Hampshire</a>
+            <a class="dropdown-item" href="#viz2" id="New Jersey">New Jersey</a>
+            <a class="dropdown-item" href="#viz2" id="New Mexico">New Mexico</a>
+            <a class="dropdown-item" href="#viz2" id="New York">New York</a>
+            <a class="dropdown-item" href="#viz2" id="North Carolina">North Carolina</a>
+            <a class="dropdown-item" href="#viz2" id="North Dakota">North Dakota</a>
+            <a class="dropdown-item" href="#viz2" id="Ohio">Ohio</a>
+            <a class="dropdown-item" href="#viz2" id="Oklahoma">Oklahoma</a>
+            <a class="dropdown-item" href="#viz2" id="Oregon">Oregon</a>
+            <a class="dropdown-item" href="#viz2" id="Pennsylvania">Pennsylvania</a>
+            <a class="dropdown-item" href="#viz2" id="Rhode Island">Rhode Island</a>
+            <a class="dropdown-item" href="#viz2" id="South Carolina">South Carolina</a>
+            <a class="dropdown-item" href="#viz2" id="South Dakota">South Dakota</a>
+            <a class="dropdown-item" href="#viz2" id="Tennessee">Tennessee</a>
+            <a class="dropdown-item" href="#viz2" id="Texas">Texas</a>
+            <a class="dropdown-item" href="#viz2" id="Utah">Utah</a>
+            <a class="dropdown-item" href="#viz2" id="Vermont">Vermont</a>
+            <a class="dropdown-item" href="#viz2" id="Virginia">Virginia</a>
+            <a class="dropdown-item" href="#viz2" id="Washington">Washington</a>
+            <a class="dropdown-item" href="#viz2" id="West Virginia">West Virginia</a>
+            <a class="dropdown-item" href="#viz2" id="Wisconcin">Wisconcin</a>
+            <a class="dropdown-item" href="#viz2" id="Wyoming">Wyoming</a>
+            <a class="dropdown-item" href="#viz2" id="US">US</a>
+        </div>
+
+    </div>
+
+
+
+    <script>
+
+    $(".dropdown-menu a").click(function(){
+      $(this).parents(".dropdown").find('.selection').text($(this).text());
+      var stateClicked = $(this).text();
+      $(".lead").empty().append("Hate Crimes in ").append(stateClicked);
+      stateChecker(stateClicked);
+    });
+    </script>
+    <p class="lead m-3" id="selectedState"></p> <!--Display State Name as the graph is for that-->
+    <div class="row">
+    <div class="col-md-12 col-lg-12">
+        <div class="viz2_line" id="viz2"></div>
+    </div>
+    </div> <!-- row 4 ends -->
+    <div class="row">
+      <div class="col-md-12 col-lg-12 my-4" id="container">
+      </div>
+    </div>
+
+
+  <div class="row">
+    <div class="col-md-2 col-lg-2"></div>
+    <div class="col-md-8 col-lg-8">
+      <br>
+       <h2> Insights & Takeaways</h2>
+      <p> As you might have noticed, the distribution of hate crimes appears to be higher in unexpected states. This leads us to the biggest limitation of using the FBI reported dataset: <strong>a lack of reporting</strong> from numerous agencies throughout the U.S.. There are many factors that are hindering this reporting, one being that it is completely voluntary to participate at this point. Additionally, law enforcement agencies have a lack of training identifying biased crimes leading to fewer reportings. As of 2016, only 1,776 out 15,254 participating agencies reported hate crimes in their jurisdiction. This means that 88% of agencies are reporting 0 hate crimes in their jurisdiction.</p>
+
+      <p>Despite this limitation, there is an <strong>increase</strong> in the number of reportings of hate crimes within the past few years. This lines up with recent events, such as the election of Donald Trump as president in 2016 and his implementation of policies with agendas that are biased against certain people. </p>
+
+      <p>The recent increase of hate crimes in the U.S. may be due to both an increase in hate crime being committed, as well as an increase in agencies reporting these crimes. Given the emboldened attitudes of individuals and groups committing hate crimes, those being targeted are also becoming more emboldened to voice these occurrences and bring to light the reality of this nation.</p>
+
+      <p>What do you think? Are they on the rise?</p>
+
+      <br>
+      <h2> References & Additional Readings</h2>
+
+    <ul>
+
+    <li> <a href=”https://www.huffingtonpost.com/entry/hate-crime-rise-2016-united-states-trump_us_59becac8e4b086432b07fed8” target="_blank"><nobr>Exclusive: New Report Offers Proof Of US Hate Crime Rise In The Trump Era</nobr></a></li>
+
+    <li> <a href=”https://www.freep.com/story/news/local/michigan/2017/12/10/hate-crimes-michigan/886779001/” target="_blank"><nobr>FBI: Reported hate crimes spike 29% in Michigan, which had the 4th highest nationally</nobr></a></li>
+
+    <li> <a href=”http://www.bbc.com/news/world-us-canada-41975573” target="_blank"><nobr>FBI: US hate crimes rise for second straight year</nobr></a></li>
+
+    <li> <a href=”https://www.washingtonpost.com/news/post-nation/wp/2017/11/13/hate-crimes-in-the-united-states-increased-last-year-the-fbi-says/?utm_term=.ed24faa8f404” target="_blank"><nobr>Hate crimes in the United States increased last year, the FBI says</nobr></a></li>
+
+    <li> <a href=”https://www.splcenter.org/hate-map” target="_blank"><nobr>Hate Map from Southern Poverty Law Center</nobr></a></li>
+
+    <li> <a href=”https://mic.com/articles/137305/here-s-how-homophobic-sexist-and-racist-each-us-state-really-is#.Qcjcy0Mm1” target="_blank"><nobr>Here's How Homophobic, Sexist and Racist Each US State Really Is</nobr></a></li>
+
+    <li> <a href=”http://www.politifact.com/punditfact/statements/2016/jul/10/charles-ramsey/how-many-police-departments-are-us/” target="_blank"><nobr>How many police departments are in the United States</nobr></a></li>
+
+    <li> <a href=”https://www.thetoptens.com/most-racists-states-us/” target="_blank"><nobr>Most Racist States in the U.S.
+    </nobr></a></li>
+
+    <li> <a href=”http://www.abajournal.com/news/article/more_than_100_federal_agencies_fail_to_report_hate_crimes_to_the_fbis_natio” target="_blank"><nobr>More than 100 federal agencies fail to report hate crimes to the FBI’s national database </nobr></a></li>
+
+    <li> <a href=”https://www.aol.com/article/news/2017/11/14/new-fbi-data-shows-rise-in-hate-crimes-in-2016-states-most-reported-cases/23276262/” target="_blank"><nobr>New FBI data shows rise in hate crimes in 2016 and reveals which states have most reported cases
+    </nobr></a></li>
+
+    <li> <a href=”https://www.washingtonpost.com/news/posteverything/wp/2017/12/11/sexual-harassment-should-be-treated-as-a-hate-crime/?utm_term=.65d57bdc1d18” target="_blank"><nobr>Sexual harassment should be treated as a hate crime</nobr></a></li>
+
+    <li> <a href=”http://www.cnn.com/2017/01/05/health/hate-crimes-tracking-history-fbi/index.html” target="_blank"><nobr>The fascinating, if unreliable, history of hate crime tracking in the US </nobr></a></li>
+
+    <li> <a href=”http://www.cnn.com/2017/11/13/politics/hate-crimes-fbi-2016-rise/index.html” target="_blank"><nobr>The number of hate crimes rose in 2016</nobr></a></li>
+
+    <li> <a href=”http://www.bbc.com/news/world-us-canada-38149406” target="_blank"><nobr>'Trump effect' led to hate crime surge, report finds
+     </nobr></a></li>
+
+    <li> <a href=”https://www.propublica.org/article/why-america-fails-at-gathering-hate-crime-statistics” target="_blank"><nobr>Why America Fails at Gathering Hate Crime Statistics
+    </nobr></a></li>
+
+
+    </div>
+    <div class="col-md-2 col-lg-2"></div>
+  </div>
+
+</div>  <!-- Container ends here -->
+
+
+<script type="text/javascript">
+  //Width and height of map
+  var us_state_abbrev = {
+    'Alabama': 'AL',
+    'Alaska': 'AK',
+    'Arizona': 'AZ',
+    'Arkansas': 'AR',
+    'California': 'CA',
+    'Colorado': 'CO',
+    'Connecticut': 'CT',
+    'Delaware': 'DE',
+    'Florida': 'FL',
+    'Georgia': 'GA',
+    'Hawaii': 'HI',
+    'Idaho': 'ID',
+    'Illinois': 'IL',
+    'Indiana': 'IN',
+    'Iowa': 'IA',
+    'Kansas': 'KS',
+    'Kentucky': 'KY',
+    'Louisiana': 'LA',
+    'Maine': 'ME',
+    'Maryland': 'MD',
+    'Massachusetts': 'MA',
+    'Michigan': 'MI',
+    'Minnesota': 'MN',
+    'Mississippi': 'MS',
+    'Missouri': 'MO',
+    'Montana': 'MT',
+    'Nebraska': 'NE',
+    'Nevada': 'NV',
+    'New Hampshire': 'NH',
+    'New Jersey': 'NJ',
+    'New Mexico': 'NM',
+    'New York': 'NY',
+    'North Carolina': 'NC',
+    'North Dakota': 'ND',
+    'Ohio': 'OH',
+    'Oklahoma': 'OK',
+    'Oregon': 'OR',
+    'Pennsylvania': 'PA',
+    'Rhode Island': 'RI',
+    'South Carolina': 'SC',
+    'South Dakota': 'SD',
+    'Tennessee': 'TN',
+    'Texas': 'TX',
+    'Utah': 'UT',
+    'Vermont': 'VT',
+    'Virginia': 'VA',
+    'Washington': 'WA',
+    'West Virginia': 'WV',
+    'Wisconsin': 'WI',
+    'Wyoming': 'WY',
+  }
+
+  var width = d3.select('div.viz1_map')[0][0].scrollWidth;
+  var height = 600;
+
+  var projection = d3.geo
+                     .albersUsa()
+  				           .translate([width/2, height/2])    // translate to center of screen
+  				           .scale([1000]);          // scale things down so see entire US
+
+  // Define path generator
+  var path = d3.geo
+               .path()
+  		  	     .projection(projection);
+
+  // var color = d3.scale
+  //               .linear()
+  //               .domain([0,1000])
+  //               .interpolate(d3.interpolateHcl)
+  //               .range([d3.rgb("#02447F"), d3.rgb('#A5E9FF')]);
+  var legendLabels = ['0-50', '50-100', '100-150', '150-200', '200-250', '250-500', '500-1000'];
+  var legendValues = [50, 100, 150, 200, 250, 500, 1000];
+//  var colorValues = ['rgb(255,254,218)', 'rgb(208,232,181)', 'rgb(153,204,186)', 'rgb(114,181,194)', 'rgb(62,94,164)', 'rgb(46,55,144)', 'rgb(21,35,87)'];
+  var colorValues = ['#E0F7FA', '#B2EBF2', '#4DD0E1', '#00ACC1', '#00838F', '#006064','#003A3C', '#002324', '#001516'];
+
+  var color = d3.scale.threshold().domain(legendValues).range(colorValues);
+
+  var svg = d3.select("div.viz1_map")
+              .append("svg")
+              .attr('class','us-map')
+              .attr("width", width)
+              .attr("height", height);
+
+  var tip = d3.tip()
+              .attr('class', 'd3-tip')
+              .html(function(d) {
+                  var s = d3.selectAll("input.range-slider");
+                  var yr = '';
+                  if(s[0][0].value == 1){
+                    yr = '13';
+                  }
+                  if (s[0][0].value == 2) {
+                    yr = '14';
+                  }
+                  if(s[0][0].value == 3){
+                    yr = '15';
+                  }
+                  if (s[0][0].value == 4) {
+                    yr = '16';
+                  }
+                  return "<strong>"+d.properties.name+"</strong></br>"+
+                         "<span>Normalized Hate Crimes : "+d.properties['dataValueNorm'+yr]+"</span>";
+              })
+
+  var csv = 'https://github.com/manikandan-kandadai/manikandan-kandadai.github.io/blob/master/uploads/statewise-all-years-categories.csv';
+  //var csv = 'statewise-all-years-categories.csv';
+  d3.csv(csv, function(d){
+    console.log('loaded');
+    loadMapData(d);
+  });
+
+
+  // Selecting the slider and calling the update function using the slider value
+  d3.selectAll("input.range-slider").on("input", function() {
+        update(+this.value, this.id)
+  });
+
+var year;
+  // This function grabs the value from the slider and updates the map colors
+  function update(val, id) {
+      var textId = '#' + id + '-value';
+      console.log('Value is',val);
+      if (val == 1){
+        year = '2013';
+        d3.select(textId).text(year);
+        d3.csv(csv, function(d){
+          updateMapData(d,year.slice(2));
+          updateTreeData(d,'4',year);
+        });
+      }
+      else if (val == 2){
+        year = '2014';
+        d3.select(textId).text(year);
+        d3.csv(csv, function(d){
+          updateMapData(d,year.slice(2));
+          updateTreeData(d,'3',year);
+        });
+      }
+      else if (val == 3){
+        year = '2015';
+        d3.select(textId).text(year);
+        d3.csv(csv, function(d){
+          updateMapData(d,year.slice(2));
+          updateTreeData(d,'2',year);
+        });
+      }
+      else {
+        year = '2016';
+        d3.select(textId).text(year);
+        d3.csv(csv, function(d){
+          updateMapData(d,year.slice(2));
+          updateTreeData(d,'1',year);
+        });
+      }
+  }
+
+  var loadMapData = function(data) {
+        // Load GeoJSON data and merge with states data
+        d3.json("us-states.json", function(json) {
+            // Loop through each state data value in the .csv file
+            for (var i = 0; i < data.length; i++) {
+
+              // Properties we have on state-level : State,Race,Religion,Orientation,Disability,Gender,Identity,Total,Normalization
+            	var dataState = data[i].State;
+
+              var dataValueRace13 = data[i].Race13;
+              var dataValueReligion13 = data[i].Religion13;
+              var dataValueOrientation13 = data[i].SexualOrientation13;
+              var dataValueDisablity13 = data[i].Disability13;
+              var dataValueGender13 = data[i].Gender13;
+              var dataValueGenderIdentity13 = data[i].GenderIdentity13;
+              var dataValueTotal13 = Number(data[i].Race13) + Number(data[i].Religion13) + Number(data[i].SexualOrientation13) + Number(data[i].Disability13) + Number(data[i].Gender13) + Number(data[i].GenderIdentity13);
+              var dataValueNorm13 = Math.round(data[i].Normalized13);
+
+              var dataValueRace14 = data[i].Race14;
+              var dataValueReligion14 = data[i].Religion14;
+              var dataValueOrientation14 = data[i].SexualOrientation14;
+              var dataValueDisablity14 = data[i].Disability14;
+              var dataValueGender14 = data[i].Gender14;
+              var dataValueGenderIdentity14 = data[i].GenderIdentity14;
+              var dataValueTotal14 = Number(data[i].Race14) + Number(data[i].Religion14) + Number(data[i].SexualOrientation14) + Number(data[i].Disability14) + Number(data[i].Gender14) + Number(data[i].GenderIdentity14);
+              var dataValueNorm14 = Math.round(data[i].Normalized14);
+
+              var dataValueRace15 = data[i].Race15;
+              var dataValueReligion15 = data[i].Religion15;
+              var dataValueOrientation15 = data[i].SexualOrientation15;
+              var dataValueDisablity15 = data[i].Disability15;
+              var dataValueGender15 = data[i].Gender15;
+              var dataValueGenderIdentity15 = data[i].GenderIdentity15;
+              var dataValueTotal15 = Number(data[i].Race15) + Number(data[i].Religion15) + Number(data[i].SexualOrientation15) + Number(data[i].Disability15) + Number(data[i].Gender15) + Number(data[i].GenderIdentity15);
+              var dataValueNorm15 = Math.round(data[i].Normalized15);
+
+              var dataValueRace16 = data[i].Race16;
+              var dataValueReligion16 = data[i].Religion16;
+              var dataValueOrientation16 = data[i].SexualOrientation16;
+              var dataValueDisablity16 = data[i].Disability16;
+              var dataValueGender16 = data[i].Gender16;
+              var dataValueGenderIdentity16 = data[i].GenderIdentity16;
+              var dataValueTotal16 = Number(data[i].Race16) + Number(data[i].Religion16) + Number(data[i].SexualOrientation16) + Number(data[i].Disability16) + Number(data[i].Gender16) + Number(data[i].GenderIdentity16);
+              var dataValueNorm16 = Math.round(data[i].Normalized16);
+
+            	// Find the corresponding state inside the GeoJSON
+            	for (var j = 0; j < json.features.length; j++)  {
+            		  var jsonState = json.features[j].properties.name;
+            		  if (dataState == jsonState) {
+            		      // Copy the data value into the JSON
+                        json.features[j].properties.abbreviation = us_state_abbrev[dataState];
+
+                        json.features[j].properties.dataValueRace13 = dataValueRace13;
+                        json.features[j].properties.dataValueReligion13 = dataValueReligion13;
+                        json.features[j].properties.dataValueOrientation13 = dataValueOrientation13;
+                        json.features[j].properties.dataValueDisablity13 = dataValueDisablity13;
+                        json.features[j].properties.dataValueGender13 = dataValueGender13;
+                        json.features[j].properties.dataValueGenderIdentity13 = dataValueGenderIdentity13;
+                        json.features[j].properties.dataValueTotal13 = dataValueTotal13;
+                        json.features[j].properties.dataValueNorm13 =  dataValueNorm13;
+
+                        json.features[j].properties.dataValueRace14 = dataValueRace14;
+                        json.features[j].properties.dataValueReligion14 = dataValueReligion14;
+                        json.features[j].properties.dataValueOrientation14 = dataValueOrientation14;
+                        json.features[j].properties.dataValueDisablity14 = dataValueDisablity14;
+                        json.features[j].properties.dataValueGender14 = dataValueGender14;
+                        json.features[j].properties.dataValueGenderIdentity14 = dataValueGenderIdentity14;
+                        json.features[j].properties.dataValueTotal14 = dataValueTotal14;
+                        json.features[j].properties.dataValueNorm14 =  dataValueNorm14;
+
+                        json.features[j].properties.dataValueRace15 = dataValueRace15;
+                        json.features[j].properties.dataValueReligion15 = dataValueReligion15;
+                        json.features[j].properties.dataValueOrientation15 = dataValueOrientation15;
+                        json.features[j].properties.dataValueDisablity15 = dataValueDisablity15;
+                        json.features[j].properties.dataValueGender15 = dataValueGender15;
+                        json.features[j].properties.dataValueGenderIdentity15 = dataValueGenderIdentity15;
+                        json.features[j].properties.dataValueTotal15 = dataValueTotal15;
+                        json.features[j].properties.dataValueNorm15 =  dataValueNorm15;
+
+                        json.features[j].properties.dataValueRace16 = dataValueRace16;
+                        json.features[j].properties.dataValueReligion16 = dataValueReligion16;
+                        json.features[j].properties.dataValueOrientation16 = dataValueOrientation16;
+                        json.features[j].properties.dataValueDisablity16 = dataValueDisablity16;
+                        json.features[j].properties.dataValueGender16 = dataValueGender16;
+                        json.features[j].properties.dataValueGenderIdentity16 = dataValueGenderIdentity16;
+                        json.features[j].properties.dataValueTotal16 = dataValueTotal16;
+                        json.features[j].properties.dataValueNorm16 =  dataValueNorm16;
+
+                      break;
+            		  }
+            	}
+            } //outer for loop closed
+
+            // Bind the data to the SVG and create one path per GeoJSON feature
+            svg.call(tip);
+
+            svg.selectAll("path")
+            	 .data(json.features)
+            	 .enter()
+            	 .append("path")
+            	 .attr("d", path)
+               .attr("class", 'pathMap')
+            	 .style("stroke", "#eee")
+            	 .style("stroke-width", "1")
+            	 .style("fill", function(d) {
+                	var value = d.properties.dataValueNorm16;
+                	return color(value);
+               })
+               .on('mouseover', tip.show)
+               .on('mouseout', tip.hide) // style fill's anonymous function closes
+               .on("click", function(d){
+                var stateClicked = d.properties.name;
+                //stateChecker(stateClicked);
+                });
+
+            svg.selectAll("text")
+               .data(json.features)
+               .enter()
+               .append("svg:text")
+               .text(function(d){ return d.properties.abbreviation; })
+               .attr("x", function(d){  return path.centroid(d)[0]; })
+               .attr("y", function(d){  return  path.centroid(d)[1];  })
+               .attr("text-anchor","middle")
+               .attr('font-size','8pt')
+               .attr('fill','black');
+
+           var g = svg.append("g")
+                      .attr("class", "key")
+                      .attr("transform", "translate(-55,400)");
+
+            g.selectAll('rect')
+               .data(legendValues)
+               .enter()
+               .append('svg:rect')
+               .attr("class", "legendMap")
+               .attr("transform", function (d, i) {
+                   {
+                       return "translate(900," + (i*20) + ")"
+                   }
+               })
+               .attr('fill',function(d,i){
+                 return colorValues[i];
+               })
+               .attr('width',20)
+               .attr('height',20);
+
+            g.selectAll('text')
+              .data(legendLabels)
+              .enter()
+              .append('text')
+              .text(function(d,i){
+                console.log("Text",d,i);
+                return d;
+              })
+              .attr('x',935)
+              .attr('y',function(d,i){
+                return i*20+15;
+              })
+              .attr('fill','black');
+
+       }); // Closing d3.json's anonymous function.
+
+  }// Closing loadMapData function. Began on line 95.
+
+  var updateMapData = function(d,year){
+    var paths = svg.selectAll('path');
+    paths.transition()
+         .duration(1000)
+         .style('fill',function(d,i){
+           var value = d.properties['dataValueNorm'+year];
+           console.log(d.properties.name, d.properties['dataValueNorm'+year]);
+           return color(value);
+         });
+  }
+
+  var updateTreeData = function(d,val,year){
+      var chart = new Highcharts.chart('container', {
+            xAxis: {
+            // Avoid data module setting axis type to category.
+            type: 'linear'
+            },
+            series: [{
+                type: "treemap",
+                layoutAlgorithm: 'strip',
+                alternateStartingDirection: true,
+
+                levels: [{
+                    level: 1,
+                    layoutAlgorithm: 'strip',
+                    dataLabels: {
+                        enabled: true,
+                        align: 'left',
+                        verticalAlign: 'top',
+                        style: {
+                          fontSize: '12px',
+                          fontWeight: 'light'
+                        }
+                    }
+                }]
+            }],
+
+            title: {text: 'Hate Crimes by Motivation - '+year+' (Normalized to US population)'},
+            data: {
+                    googleSpreadsheetKey: '1CSSXuFN5lJJedAS7RO-8HkL2VNi_ljtsly5Cnq04V6M',
+                    googleSpreadsheetWorksheet : val,
+                    seriesMapping: [{
+                                      id: 1,
+                                      name: 1,
+                                      value: 2,
+                                      parent: 3,
+                                      color: 4
+                                    }]
+                  },
+            tooltip: {
+                      formatter: function() {
+                      //console.log(this);
+                          if(this.point.parent == null){
+                            return '<b>'+ this.key +': </b>' + this.point.value + '<br>'
+                            }
+                          return '<b> Parent : ' + this.point.parent +'</b><br><b>'+ this.key +': </b>' + this.point.value + '<br>'
+                      }
+                    } //tooltip key-value pair closes
+        });
+    }
+
+var margin = {top: 20, right: 100, bottom: 50, left: 100},
+    //widthM = d3.select('div.viz2_line')[0][0].clientWidth - margin.left - margin.right,
+    widthM = 1200;
+    heightM = 400;
+
+
+//console.log(stateClicked);
+//stateChecker(stateClicked);
+
+if ($(".lead").empty()) {
+    $(".lead").append("Total Hate Crimes across US");
+    stateChecker('US');
+}
+
+function stateChecker(stateClicked){ //fetch year value from slider
+    d3.csv("statewise-all-years-categories.csv", function(error, data) {
+        for (var i = 0; i < data.length; i++){
+            if (stateClicked == data[i]['State']){
+                console.log("Matched");
+                console.log(data[i]);
+
+				var race_dataset = [
+					{x: 2013, y: data[i]['Race13']}, {x: 2014, y: data[i]['Race14']}, {x: 2015, y: data[i]['Race15']},
+                    {x: 2016, y: data[i]['Race16']}]
+                var religion_dataset = [
+					{x: 2013, y: data[i]['Religion13']}, {x: 2014, y: data[i]['Religion14']}, {x: 2015, y: data[i]['Religion15']},
+                    {x: 2016, y: data[i]['Religion16']}]
+                var gender_dataset = [
+					{x: 2013, y: data[i]['Gender13']}, {x: 2014, y: data[i]['Gender14']}, {x: 2015, y: data[i]['Gender15']},
+                    {x: 2016, y: data[i]['Gender16']}]
+				var genderid_dataset = [
+					{x: 2013, y: data[i]['GenderIdentity13']}, {x: 2014, y: data[i]['GenderIdentity14']}, {x: 2015, y: data[i]['GenderIdentity15']},
+                    {x: 2016, y: data[i]['GenderIdentity16']}]
+                var disability_dataset = [
+					{x: 2013, y: data[i]['Disability13']}, {x: 2014, y: data[i]['Disability14']}, {x: 2015, y: data[i]['Disability15']},{x: 2016, y: data[i]['Disability16']}]
+                var sexualorientation_dataset = [
+					{x: 2013, y: data[i]['SexualOrientation13']}, {x: 2014, y: data[i]['SexualOrientation14']}, {x: 2015, y: data[i]['SexualOrientation15']},
+                    {x: 2016, y: data[i]['SexualOrientation16']}]
+
+                var average_dataset = [
+                    {x: 2013, y: 119}, {x: 2014, y: 109}, {x: 2015, y: 119}, {x: 2016, y: 123}]
+
+                maxs = [d3.max(race_dataset, function (d) {
+                    return +d.y;
+                }), d3.max(religion_dataset, function (d) {
+                    return +d.y;
+                }), d3.max(gender_dataset, function (d) {
+                    return +d.y;
+                }), d3.max(genderid_dataset, function (d) {
+                    return +d.y;
+                }), d3.max(disability_dataset, function (d) {
+                    return +d.y;
+                }), d3.max(sexualorientation_dataset, function (d) {
+                    return +d.y;
+                }), d3.max(average_dataset, function (d) {
+                    return d.y;
+                })]
+
+                maxvalue = Math.ceil(d3.max(maxs) / 100) * 100;
+                yticks = maxvalue * 2 / 100;
+                if (stateClicked == 'US') {
+                    maxvalue = 4000;
+                    yticks = 8;
+                }
+
+                motivations = [1, 2, 3, 4, 5, 6]
+                lineMotivations = ["Race", "Religion", "Gender", "Gender Identity", "Disability", "Sexual Orientation"];
+                lineColors = ["#AA3E50", "#F1B81B", "#F47F55", "#8C78B7", "#87B05D", "#807874"]
+
+                ///ploting line charts
+                //Set ranges
+                var xScale = d3.scale.linear()
+                            .domain([2013, 2016])
+                            .range([0, 780]);
+
+                var yScale = d3.scale.linear()
+                            .domain([0, maxvalue])
+                            .range([heightM,0]);
+
+                var xAxis = d3.svg.axis()
+                    .scale(xScale)
+                    .orient("bottom")
+                    .ticks(4)
+                    .innerTickSize(-heightM)
+                    .tickPadding(10);
+
+                var yAxis = d3.svg.axis()
+                    .scale(yScale)
+                    .orient("left")
+                    .ticks(yticks);
+
+                var categoryLine = d3.svg.line()
+                    .x(function(d) { return xScale(d.x); })
+                    .y(function(d) { return yScale(d.y);
+                    });
+
+                //draw chart
+                d3.select("#viz2").selectAll("svg").remove();
+
+                var hcm = d3.select("#viz2").append("svg")
+                    .attr("width", widthM + margin.left + margin.right)
+                    .attr("height", heightM + margin.top + margin.bottom)
+                    .append("g")
+                    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+                hcm.append("g")
+                    .attr("class", "x axis")
+                    .attr("transform", "translate(0," + heightM + ")")
+                    .call(xAxis);
+
+                hcm.append("g")
+                    .attr("class", "y axis")
+                    .call(yAxis);
+
+                drawlinechart(race_dataset,"#AA3E50",hcm,categoryLine,'n');
+                drawlinechart(religion_dataset,"#F1B81B",hcm,categoryLine,'n');
+                drawlinechart(gender_dataset,"#F47F55",hcm,categoryLine,'n');
+                drawlinechart(genderid_dataset,"#8C78B7",hcm,categoryLine,'n');
+                drawlinechart(disability_dataset,"#87B05D",hcm,categoryLine,'n');
+                drawlinechart(sexualorientation_dataset,"#807874",hcm,categoryLine,'n');
+                drawlinechart(average_dataset,"#969696",hcm,categoryLine,'d');
+
+                var g = hcm.append("g")
+                           .attr("class", "key")
+                           .attr("transform", "translate(-55,130)");
+
+                 g.selectAll('rect')
+                    .data(motivations)
+                    .enter()
+                    .append('svg:rect')
+                    .attr("class", "legendMap")
+                    .attr("transform", function (d, i) {
+                        {
+                            return "translate(890," + (i*20) + ")"
+                        }
+                    })
+                    .attr('fill',function(d,i){
+                      return lineColors[i];
+                    })
+                    .attr('width',20)
+                    .attr('height',20);
+
+                 g.selectAll('text')
+                   .data(lineMotivations)
+                   .enter()
+                   .append('text')
+                   .text(function(d,i){
+                     console.log("Text",d,i);
+                     return d;
+                   })
+                   .attr('x', 920)
+                   .attr('y',function(d,i){
+                     return i*20+15;
+                   });
+
+                 //not working
+                 g.selectAll('text')
+                    .append('text')
+                    .text("The dashed line indicates average number of hate crimes across US.")
+                    .attr('x',920)
+                    .attr('y',300)
+                    .style("fill", "black");
+            }
+		}
+	});
+}
+
+function drawlinechart(dataset,linecolor,hcm,categoryLine,val){
+
+    if (val === 'n') {
+        hcm.append("path")
+            .data([dataset])
+            .attr("class", "line")
+            .attr("d", categoryLine)
+            .style("stroke", linecolor)
+            .style("stroke-width", 3);
+    }
+
+    if (val === 'd') {
+        hcm.append("path")
+            .data([dataset])
+            .attr("class", "line")
+            .attr("d", categoryLine)
+            .style("stroke-dasharray","6,4")
+            .style("stroke", linecolor);
+    }
+}
+
+</script>
+</body>
+</html>
