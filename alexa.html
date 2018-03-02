@@ -1,576 +1,384 @@
-<!doctype html>
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by Pixelarity
+	pixelarity.com | hello@pixelarity.com
+	License: pixelarity.com/license
+-->
 <html>
-<head>
-    <meta charset="utf-8">
-    <meta name="keywords" content="">
-    <meta name="description" content="">
-    
-<link rel="shortcut icon" type="image/ico" href="favicon.ico">
-    
-	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" href="./css/animate.min.css"><link rel="stylesheet" href="./css/font-awesome.min.css"><link rel="stylesheet" href="./css/ionicons.min.css"><link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=PT+Serif&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-    
-	<script src="./js/jquery-2.1.0.min.js"></script>
-	<script src="./js/bootstrap.min.js"></script>
-	<script src="./js/blocs.min.js"></script>
-	<script src="./js/jqBootstrapValidation.js"></script>
-	<script src="./js/formHandler.js"></script>
-    <title>Alexa</title>
+	<head>
+		<title>Alexa-Priv</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 
-    
-<!-- Google Analytics -->
- 
-<!-- Google Analytics END -->
-    
-</head>
-<body>
-<!-- Main container -->
-<div class="page-container">
-    
-<!-- bloc-28 -->
-<div class="bloc bloc-fill-screen bloc-bg-texture texture-darken bg-cover bgc-white l-bloc" id="bloc-28">
-	<div class="container fill-bloc-top-edge sticky-nav">
-		<nav class="navbar row">
-			<div class="navbar-header">
-				<a class="navbar-brand" href="index.html"><img src="img/logo.png" width="44" height="40" /></a>
-				<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
-					<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-				</button>
-			</div>
-			<div class="collapse navbar-collapse navbar-1">
-				<ul class="site-navigation nav navbar-nav pull-right">
-					<li>
-						<a href="index.html" class="ltc-caribbean-green">Back to Portfolio</a>
-					</li>
-					<li>
-						<a href="index.html" class="ltc-caribbean-green">Alexa-Priv</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
-	</div>
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-12">
-				<h1 class="text-center hero-bloc-text tc-caribbean-green ">
-					Alexa-Priv
-				</h1>
-				<h3 class="text-center mg-lg hero-bloc-text-sub tc-white">
-					Rethinking the Smart Speakers of tomorrow through <br>Experimental Design
-				</h3>
-			</div>
-		</div>
-	</div>
-	<div class="container fill-bloc-bottom-edge">
-		<div class="row">
-			<div class="col-sm-12">
-				<a id="scroll-hero" class="blocs-hero-btn-dwn" href="#"><span class="fa fa-chevron-down icon-white icon-md"></span></a>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- bloc-28 END -->
+	</head>
+	<body>
 
-<!-- bloc-29 -->
-<div class="bloc bg-crosses-s-bg bg-repeat tc-1 bgc-white l-bloc" id="bloc-29">
-	<div class="container bloc-lg">
-		<div class="row">
-			<div class="col-sm-12">
-				<div>
-					<h2 class="mg-lg tc-caribbean-green ">
-						<strong>Project Overview</strong>
-					</h2>
-					<h3 class="mg-md tc-caribbean-green">
-						<strong>Motivation</strong>
+		<!-- Sidebar -->
+			<section id="sidebar">
+				<div class="logo" >
+					<a href="index.html" class="image"><img src="images/m_logo_blue_colored.png" alt="logo" data-position="top center" width="100%" align="middle" style=""/></a>
+					<h4 style="font-weight: 700;text-transform: uppercase; padding: 20px; padding-right: 0px;" >Manikandan K V</h4>
+				</div>
+				<div class="inner">
+					<h3>
+					<nav>
+						<ul>
+							<li><a class="correction" href="#intro">Alexa-Priv</a></li>
+							<li><a class="correction" href="#study">Study Design</a></li>
+							<!-- <li><a class="correction" href="#diary">Diary Study</a></li> -->
+              <li><a  class="correction" href="#interaction">Interaction Design</a></li>
+              <!-- <li><a class="correction" href="#solution">Survey</a></li> -->
+              <li><a  class="correction" href="#prototype">Prototyping</a></li>
+              <!-- <li><a class="correction" href="#solution">Heuristic Evaluation</a></li> -->
+              <!-- <li><a class="correction" href="#solution">Usability Tests</a></li> -->
+              <li><a class="correction" href="#evaluation">Evaluation</a></li>
+              <li><a class="correction" href="index.html#intro">Portfolio</a></li>
+						</ul>
+					</nav>
 					</h3>
 				</div>
-				<p class="mg-lg ">
-					Voice-based smart assistants pose <strong>novel privacy risks</strong> since these devices are always listening for activation keywords. The privacy concern with such a device is two-fold. First, the <strong>device itself can be compromised to eavesdrop</strong> on the users. Second, these devices can learn the user&rsquo;s preferences and <strong>can invade privacy</strong> by <strong>providing targeted ads</strong> and other services beyond what users expect or want the smart assistant to learn about them. <br> <br>In order to tackle this problem current solutions have certain levels of privacy controls integrated into their system such as activation keyword detection, physical mute button and speaker recognition (Google Home). However, <strong>the mute button</strong> present in current devices such as Amazon echo does likely <strong>not</strong> provide an <strong>intuitive control for privacy</strong>. Users may forget to mute the device before saying something sensitive or the device may be muted when they want to use it.<br>
-				</p>
-				<h3 class="mg-md tc-caribbean-green">
-					<strong>Objective</strong>
-				</h3>
-				<p class="mg-lg ">
-					<strong>We propose to leverage interpersonal communication cues, such as people&rsquo;s tendency to look at their conversation partner or modulating how loudly they speaking depending on who you should hear them, to design more natural and effective privacy controls for voice-based smart assistants.</strong>
-				</p>
-				<h3 class="mg-md tc-caribbean-green">
-					<strong>Hypothesis</strong>
-				</h3>
-				<p class=" mg-lg">
-					<strong>The proposed design when compared to current privacy controls, will lower privacy concerns and increase the perceived privacy without negatively affecting the user experience or utility of the smart speakers.</strong><br>
-				</p>
-				<h3 class="mg-md tc-caribbean-green">
-					<strong>Note:</strong>
-				</h3>
-				<p>
-					<i>This research is still in progress and hence specific details about the research is removed and a generic approach is presented. The research was presented at the <a class="a-btn ltc-tufts-blue" target="_blank" href="http://datatransparencylab.org/travel-grants-2017/"><strong>Data Transparency Lab</strong></a>at Barcelona in December 2017 and the paper will also be published at ACM Journal such as CHI or UbiComp.</i>
-				</p>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- bloc-29 END -->
 
-<!-- Bloc Group -->
-<div class='bloc-group'>
-
-<!-- bloc-30 -->
-<div class="bloc l-bloc bgc-white bloc-tile-4" id="bloc-30">
-	<div class="container bloc-lg">
-		<div class="row">
-			<div class="col-sm-12">
-				<img src="img/case3d_final.png" class="img-responsive" />
-			</div>
-		</div>
-	</div>
-</div>
-<!-- bloc-30 END -->
-
-<!-- bloc-31 -->
-<div class="bloc l-bloc bgc-white bloc-tile-2" id="bloc-31">
-	<div class="container bloc-lg">
-		<div class="row">
-			<div class="col-sm-12">
-				<img class="img-responsive  center-block" src="img/Device_SML.png" />
-				<form id="form_38993" novalidate>
-					<div class="form-group">
-						<label class="mg-lg">
-							<br>
-						</label>
-					</div>
-				</form>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- bloc-31 END -->
-
-<!-- bloc-32 -->
-<div class="bloc l-bloc bgc-white bloc-tile-4" id="bloc-32">
-	<div class="container bloc-lg">
-		<div class="row">
-			<div class="col-sm-12">
-				<img src="img/IMG_20180113_134455_Bokeh.png" class="img-responsive mg-md" />
-				<form id="form_27336" novalidate>
-					<div class="form-group">
-						<label class="mg-lg">
-							3D Printed model<br>
-						</label>
-					</div>
-				</form>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- bloc-32 END -->
-</div>
-<!-- Bloc Group END -->
-
-<!-- Bloc Group -->
-<div class='bloc-group'>
-
-<!-- bloc-33 -->
-<div class="bloc l-bloc bgc-white bloc-tile-3" id="bloc-33">
-	<div class="container bloc-lg">
-		<div class="row">
-			<div class="col-sm-12">
-				<img src="img/GazeViz.png" class="img-responsive" />
-			</div>
-		</div>
-	</div>
-</div>
-<!-- bloc-33 END -->
-
-<!-- bloc-34 -->
-<div class="bloc l-bloc bgc-white bloc-tile-3" id="bloc-34">
-	<div class="container bloc-lg">
-		<div class="row">
-			<div class="col-sm-12">
-				<img src="img/Gaze.png" class="img-responsive" />
-			</div>
-		</div>
-	</div>
-</div>
-<!-- bloc-34 END -->
-
-<!-- bloc-35 -->
-<div class="bloc l-bloc bgc-white bloc-tile-3" id="bloc-35">
-	<div class="container bloc-lg">
-		<div class="row">
-			<div class="col-sm-12">
-				<img src="img/Volume.png" class="img-responsive" />
-			</div>
-		</div>
-	</div>
-</div>
-<!-- bloc-35 END -->
-</div>
-<!-- Bloc Group END -->
-
-<!-- bloc-36 -->
-<div class="bloc bg-lines-v2-bg bg-repeat bgc-white l-bloc" id="bloc-36">
-	<div class="container bloc-sm">
-		<div class="row">
-			<div class="col-sm-12">
-				<h2 class="mg-md text-left  tc-caribbean-green">
-					<strong>Study Design</strong>
-				</h2>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- bloc-36 END -->
-
-<!-- bloc-37 -->
-<div class="bloc bgc-white bg-lines-v2-bg l-bloc bg-repeat" id="bloc-37">
-	<div class="container bloc-sm">
-		<div class="row cushycms row-no-gutters">
-			<div class="col-sm-12">
-				<h3 class="mg-md tc-caribbean-green">
-					<strong>Recruitment</strong>
-				</h3>
-				<p class=" mg-md">
-					Participants are recruited by sending <strong>recruitment emails in list servers and public forums</strong> such as Facebook and Craigslist. Flyers are posted around the campus of the University and around the city of Ann Arbor. <br> <br>The user base for our study can be either <strong>existing users or non-users of voice based smart assistants</strong>. By inviting participants from a variety of settings such as students and others from within the city, the sample is equitable and representative of a larger collection of user population.<br>
-				</p>
-				<ul class="list-unstyled">
-				</ul>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- bloc-37 END -->
-
-<!-- bloc-38 -->
-<div class="bloc bg-lines-v2-bg bg-repeat bgc-white l-bloc" id="bloc-38">
-	<div class="container bloc-md">
-		<div class="row">
-			<div class="col-sm-5">
-				<h3 class="mg-md tc-caribbean-green">
-					<strong>Variables and Conditions</strong>
-				</h3>
-				<p>
-					The following is a list of variables that is crucial for the study design and evaluation.<br>
-				</p>
-				<ul>
-					<li>
-						<p>
-							<strong>Control Variable</strong>:&nbsp;For the study, the existing amazon alexa device is used as the control device with its “mute button” being the control condition
-						</p>
-					</li>
-					<li>
-						<p>
-							<strong>Independent Variables</strong>:&nbsp;For the study 3 levels of intervention techniques were developed as test conditions and is tested against the control condition.<br>
-						</p>
-					</li>
-					<li>
-						<p>
-							<strong>Dependent Variables</strong>:&nbsp;The different conditions are tested with different “within-subjects” as a pair and a list of 4 dependent variable is measured<br>
-						</p>
-					</li>
-					<li>
-						<p>
-							<strong>Random Variable</strong>:&nbsp; <br>- Expertise in using smart speakers <br>- Extroverted/ Introverted nature of participants<br>
-						</p>
-					</li>
-					<li>
-						<p>
-							<strong>Confounding Variables</strong>:<br>- Position placement of the smart speakers<br>- Lighting Conditions<br>- Complexity of the tasks presented<br>- Skill transfer at the end of each tasks.<br>
-						</p>
-					</li>
-				</ul>
-			</div>
-			<div class="col-sm-7">
-				<div class="text-center">
-					<img src="img/variables.png" class="img-responsive" />
+				<div class="info">
+					<h3>
+					<li><a href="uploads/Resume.pdf" target="_blank">Resume</a></li>
+					<li><a href="About.html" >About Me</a></li>
+					<li><a href="mailto:kvmani@umich.edu">Email</a></li>
+</h3>
+					<h2 class="social" >
+						<ul class="icons" style="display:flex; flex-direction: row; justify-content:flex-end;">
+							<li><a href="https://medium.com/@kvmani/" class="fa-medium"><span class="label">Medium</span></a></li>
+							<li><a href="https://github.com/kvmani92" class="fa-github"><span class="label">Github</span></a></li>
+							<li><a href="https://www.linkedin.com/in/kvmani" class="fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						</ul>
+					</h2>
 				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- bloc-38 END -->
 
-<!-- bloc-39 -->
-<div class="bloc bg-lines-v2-bg bg-repeat bgc-white l-bloc" id="bloc-39">
-	<div class="container bloc-md">
-		<div class="row">
-			<div class="col-sm-5">
-				<h3 class="mg-md tc-caribbean-green">
-					<strong>Order Effects</strong>
-				</h3>
-				<p>
-					With 4 independent test conditions and user tasks, there is a possibility to get <strong>biased results due to the order</strong> in which the tasks and conditions are tested. <br> <br>To account for this order effect <strong>Orthogonal Balanced Latin square</strong> is used as a counterbalance technique. This determines the order in which the tasks needs to be presented to the participants. <br> <br><strong>Each group is a pair of participants</strong> (friends) who will be taking the tasks in order represented in the table.
-				</p>
-			</div>
-			<div class="col-sm-7">
-				<img src="img/latinsquare.png" class="img-responsive" /><img src="img/key.png" class="img-responsive" />
-			</div>
-		</div>
-	</div>
-</div>
-<!-- bloc-39 END -->
+			</section>
 
-<!-- bloc-40 -->
-<div class="bloc bgc-white bg-lines-dl2-bg l-bloc bg-repeat" id="bloc-40">
-	<div class="container bloc-sm">
-		<div class="row">
-			<div class="col-sm-12">
-				<h2 class="mg-md tc-caribbean-green ">
-					<strong>Evaluation&nbsp;</strong>
-				</h2>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- bloc-40 END -->
+		<!-- Wrapper -->
+			<div id="wrapper">
 
-<!-- bloc-41 -->
-<div class="bloc bg-lines-dl2-bg bg-repeat bgc-white l-bloc" id="bloc-41">
-	<div class="container bloc-sm">
-		<div class="row">
-			<div class="col-sm-12">
-				<h3 class="mg-md tc-caribbean-green">
-					<strong>User Tasks</strong>
-				</h3>
-				<p>
-					Participants will asked to evaluate 4 conditions in order as specified by the latin square. Each condition is paired up with a user task asking the participants to engage in a discussion involving Alexa.
-				</p>
-				<ul>
-					<li>
-						<p>
-							<strong>Condition A</strong>: This is the Control condition and represents the current interaction method of existing smart speakers.
-						</p>
-					</li>
-					<li>
-						<p>
-							<strong>Condition B</strong>: This is an intervening condition using gaze to detect the need for the smart speaker
-						</p>
-					</li>
-					<li>
-						<p>
-							<strong>Condition C</strong>: This is an intervening condition using ambient volume to detect the need for the speaker
-						</p>
-					</li>
-					<li>
-						<p>
-							<strong>Condition D</strong>: This is an intervening condition using both gaze and volume.
-						</p>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- bloc-41 END -->
+				<!-- Intro -->
+					<section id="intro" class="wrapper style1 fullscreen fade-up" style="justify-content: center; background-image:url(images/Alexa/cover.png)">
+						<div class="inner" style="text-align: center">
+							<h1>Alexa-Priv</h1>
+							<p style="color:#fff">Rethinking smart speakers to better support user privacy</p>
+							<!-- <ul class="actions">
+								<li><a href="#one" class="button scrolly"></a></li>
+							</ul> -->
+						</div>
+					</section>
 
-<!-- bloc-42 -->
-<div class="bloc bgc-white bg-lines-dl2-bg l-bloc bg-repeat" id="bloc-42">
-	<div class="container bloc-sm">
-		<div class="row voffset">
-			<div class="col-sm-12">
-				<h3 class="mg-md tc-caribbean-green">
-					<strong>Interview</strong>
-				</h3>
-				<p>
-					After the completion of each task, a brief interview is conducted to <strong>qualitatively</strong> understand the participant's <strong>perceived privacy</strong> towards the system. The interview questions are <strong>open ended</strong> and targets the participant's emotions and to <strong>understand “why” the participant did something</strong> as opposed to something else.
-				</p>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- bloc-42 END -->
+				<!-- Two -->
+					<section id="overview" class="wrapper style3 fade-up">
+						<div class="inner">
+							<h2>Overview</h2>
+							<div class="features">
+								<section>
+									<span class="icon major fa-question"></span>
+									<h3>Motivation</h3>
+									<p>Voice-based smart assistants pose novel privacy risks due to its always listening feature which can be triggerd accidently. The mute button requires manual intervention and does not alleviate this privacy concern.</p>
+								</section>
+								<section>
+									<span class="icon major fa-globe"></span>
+									<h3>Objective</h3>
+                  <p>To design better privacy controls that would reduce the window for accidental triggers and provide better privacy controls to users</p>
+								</section>
+								<section>
+									<span class="icon major fa-quote-left"></span>
+									<h3>Hypothesis</h3>
+									<p>We propose the use of interpersonal communication cues such as people’s tendency to look at the speaker and voice modulation to provide better privacy controls for the users.
+</p>
+								</section>
+								<section>
+									<span class="icon major fa-user"></span>
+									<h3>My Contribution</h3>
+									<p>I was involved in literature review, study design and prototype design & Implementation</p>
+								</section>
 
-<!-- bloc-43 -->
-<div class="bloc bg-lines-dl2-bg bg-repeat bgc-white l-bloc" id="bloc-43">
-	<div class="container bloc-md">
-		<div class="row">
-			<div class="col-sm-4">
-				<h3 class="mg-md tc-caribbean-green">
-					<strong>SUS Questionnaire</strong>
-				</h3>
-				<p>
-					The <strong>System Usability Scale (SUS)</strong> is a list of 10 questions asked to identify the usability of a system under investigation. This scale is used to evaluate <strong>quantitatively</strong> the <strong>usability of the designed system</strong>.&nbsp; <br> <br>This Questionnair is presented at the end of each task.
-				</p>
-				<ul class="list-unstyled">
-				</ul>
-			</div>
-			<div class="col-sm-8">
-				<img src="img/sus.png" class="img-responsive" />
-			</div>
-		</div>
-	</div>
-</div>
-<!-- bloc-43 END -->
+							</div>
+              <h3 class="subhead">Note:</h3>
+              <p>
+                This research is still in progress and hence specific details about the research is removed and a generic approach is presented. The research was presented at the <a href="http://datatransparencylab.org/dtl-2017/travel-grants-dtl-2017/" target="_blank"><b>Data Transparency Lab</b></a> at Barcelona in December 2017 and the paper will also be published at ACM Journal such as CHI or UbiComp
+              </p>
 
-<!-- bloc-44 -->
-<div class="bloc bg-lines-dl2-bg bg-repeat bgc-white l-bloc" id="bloc-44">
-	<div class="container bloc-lg">
-		<div class="row">
-			<div class="col-sm-12">
-				<div class="row">
-					<div class="col-sm-4">
-						<h3 class="mg-md tc-caribbean-green">
-							<strong>Emotion Coding</strong>
-						</h3>
-						<p>
-							At the end of each task, the participants are presented with the <strong>Self-Assessment Manikin (SAM)</strong> and are asked to select the emoton that closely relates to theirs while using the system.&nbsp; <br> <br>This technique is used to analyze and understand their emotion towards the system.
-						</p>
+							<ul class="actions" style="display:flex; justify-content:center">
+								<li><a href="#solution" class="button" style="background-color:rgba(255,255,255,0.2)" ><span >Go to Solution</span></a></li>
+							</ul>
+						</div>
+					</section>
+
+
+					<section id="study" class="wrapper style3 fade-up" style="background-color:rgba(95, 201, 158, 0.9)">
+						<div class="inner">
+							<h2>Study Design</h2>
+<br>
+							<h3 ># Recruitment</h3>
+              <section>
+                <p>Participants are recruited by sending recruitment emails in list servers and public forums such as Facebook and Craigslist. Flyers are posted around the campus of the University and around the city of Ann Arbor</p>
+                <p>The user base for our study can be either existing users or non-users of voice based smart assistants. By inviting participants from a variety of settings such as students and others from within the city, the sample is equitable and representative of a larger collection of user population</p>
+
+              </section><br>
+<h3 ># Variables and Conditions</h3>
+            <section>
+								<img src="images/Alexa/variables.png" alt="" style="width:100%;border-radius:5px ">
+<br><br><h3 class="subhead">Method</h3>
+<p>The following is a list of variables that is crucial for the study design and evaluation.</p>
+<ul>
+<li>
+  <b>Control Variable:</b> For the study, the existing amazon alexa device is used as the control device with its “mute button” being the control condition
+</li>
+<li>
+  <b>Independent Variables:</b> For the study 3 levels of intervention techniques were developed as test conditions and is tested against the control condition.
+</li>
+<li>
+  <b>Dependent Variables:</b> The different conditions are tested with different “within-subjects” as a pair and a list of 4 dependent variable is measured
+</li>
+<li>
+<b>Random Variables:  </b><br>Expertise in using smart speakers <br>Extroverted/ Introverted nature of participants
+</li>
+</ul>
+
+
+</section>
+<h3 ># Order Effects</h3>
+<h3 class="subhead">Why?</h3>
+
+<p>With 4 independent test conditions and user tasks, there is a possibility to get biased results due to the order in which the tasks and conditions are tested. </p>
+
+<section>
+<h3 class="subhead">How?</h3>
+<p>To account for this order effect Orthogonal Balanced Latin square is used as a counterbalance technique. This determines the order in which the tasks needs to be presented to the participants.
+
+<br><br>Each group is a pair of participants (friends) who will be taking the tasks in order represented in the table.</p>
+</section>
+
+<div class="flexcol">
+
+  <img src="images/Alexa/latinsquare.png" alt="" class="_basis2">
+  <img src="images/Alexa/key.png" alt=""  class="_basis2">
+
+
+</div>
+</section>
+
+
+					<section id="interaction" class="wrapper style3 fade-up" style="background-color:rgba(95, 201, 158, 0.8)">
+						<div class="inner">
+							<h2>Interaction Design</h2>
+<br>
+<h3 ># Gaze based control</h3>
+<section>
+	<p>
+This control is inspired by the interpersonal communication cues we see among people where one looks at the other person and talks to him/her in a face-to-face communication. <br><br>In our approach, we used a Microsoft Kinect to detect if the user is looking at the device or not to turn on/off the microphones of the smart speaker
+	</p>
+
+
+<img src="images/Alexa/Gaze.png" alt="" style="width:100%;border-radius:5px ; background-color:#fff">
+<br>
+</section>
+
+<br>
+<h3 ># Volume based control</h3>
+<section>
+	<p>
+In this control, we make use of the general idea that private conversations tend not to be loud. We make use of external microphones to detect the ambient volume and turn the smart speakers microphone on/off based on the decible value.
+	</p>
+
+
+<img src="images/Alexa/Volume.png" alt="" style="width:100%;border-radius:5px ; background-color:#fff">
+<br>
+</section><br>
+
+<p>The different states of microphone is communicated to the user at all times using the LED ring surrounding the device. The volume decibles is mapped to the LEDs in the ring to show a visualization of the volume levels along the ring</p>
+<div class="flexcol">
+
+  <img src="images/Alexa/GazeViz.png" alt="" class="_basis2" >
+  <img src="images/Alexa/volumeviz.png" alt=""  class="_basis2">
+
+</div>
+
+
+</section>
+
+
+
+		<section id="prototype" class="wrapper style3 fade-up" style="background-color:rgba(95, 201, 158, 0.7)">
+			<div class="inner">
+				<h2>Prototyping</h2>
+				<br>
+				<section>
+					<h3 ># 3d Design and Fabrication</h3>
+					<br>
+
+        <p>
+          The case for the prototype was designed using a 3D modeling software and fabricated using a 3D printer.
+        </p>
+
+
+
+              <div class="flexcol">
+
+                <img src="images/Alexa/case3d_final.png" alt="" class="_basis2" style="background-color:#fff">
+                <img src="images/Alexa/Device_SML.png" alt=""  class="_basis2" style="background-color:#fff">
+
+              </div>
+
+
+		</section>
+    <section>
+      <h3 ># System Architecture</h3>
+      <br>
+
+      <p>
+      The prototype was created using a RaspberryPI3 with Matrix Creator Shield. Amazon Alexa Voice Services was used to enable "Alexa" in the device. Sensory.AI was used as the hotword detection engine. Microsoft Kinect was used to detect users for gaze control.
+      </p>
+
+      <div class="flexcol">
+
+        <img src="images/Alexa/architecture.png" alt="" class="_basis2" style="background-color:#fff">
+        <img src="images/Alexa/StilImage_sml.png" alt=""  class="_basis2" style="background-color:#fff">
+
+      </div>
+      <br>
+
+
+</section>
+<br>
+
+
+  </section>
+
+
+		<section id="evaluation" class="wrapper style3 fade-up" style="background-color:rgba(95, 201, 158, 0.6)">
+			<div class="inner">
+				<h2>Evaluation</h2>
+				<br>
+        <h3 class="subhead">User Tasks</h3>
+        <p>Participants will asked to evaluate 4 conditions in order as specified by the latin square. Each condition is paired up with a user task asking the participants to engage in a discussion involving Alexa.</p>
+<ul>
+  <li><b>Condition A:</b> This is the Control condition and represents the current interaction method of existing smart speakers.</li>
+  <li><b>Condition B:</b> This is an intervening condition using gaze to detect the need for the smart speaker</li>
+  <li><b>Condition C:</b> This is an intervening condition using ambient volume to detect the need for the speaker</li>
+  <li><b>Condition D:</b> This is an intervening condition using both gaze and volume</li>
+</ul><br>
+<section>
+        <h3 class="subhead">Interview</h3>
+  <p>After the completion of each task, a brief interview is conducted to qualitatively understand the participant's perceived privacy towards the system. The interview questions are open ended and targets the participant's emotions and to understand “why” the participant did something as opposed to something else.  </p>
+<h3 class="subhead">SUS Questionnaire</h3>
+<p>The System Usability Scale (SUS) is a list of 10 questions asked to identify the usability of a system under investigation. This scale is used to evaluate quantitatively the usability of the designed system.  <br>This Questionnair is presented at the end of each task.</p>
+<div class="flexcol">
+
+  <img src="images/Alexa/sus.png" alt="" style="background-color:#fff">
+
+
+</div><br><br>
+<h3 class="subhead">Interview</h3>
+<p>At the end of each task, the participants are presented with the Self-Assessment Manikin (SAM) and are asked to select the emoton that closely relates to theirs while using the system.  <br><br>This technique is used to analyze and understand their emotion towards the system.</p>
+
+<div class="flexcol">
+
+  <img src="images/Alexa/SAM.jpg" alt="" style="background-color:#fff">
+
+
+</div>
+</section>
+
+
+			</div>
+		</section>
+
+
+
+
+				<!-- Related Work -->
+				<section id="two" class="wrapper style1 fade-up">
+					<div class="inner">
+						<h2>Other Works</h2>
+						<div class="works features">
+
+
+
+              <section style=" background-color: #444; background-size:100%; background-repeat:no-repeat;">
+                <a href="Rakshaa.html">
+                  <div>
+                    <h3>Rakshaa</h3>
+                <p>A Civic Tech mobile application design with an aim to curb sexual harassment of women in India by leveraging social network connections</p>
+              </div>
+              </section>
+
+							<section class="borderCorrection" style="    background-color: #444; background-size:100%; background-repeat:no-repeat;">
+								<a href="InfoViz.html">
+									<div>
+										<h3>Info Viz</h3>
+								<p>A group Project visualizing Hate Crimes across the United States from 2013-2016 created using d3.js</p>
+							</div>
+							</section>
+
+							<section style="    background-color: #444; background-size:100%; background-repeat:no-repeat;">
+								<a href="Visual.html">
+									<div>
+								<h3>Visual Designs</h3>
+								<p>My personal collection of digital design work which includes Posters, Logos, Personal Branding, etc
+
+</p>
+							</div></a></section>
+
+              <section style="background-color: #444; background-size:100%; background-repeat:no-repeat;">
+                <a href="G2.html">
+                  <div>
+                <h3>G2 Crowd</h3>
+                <p>User Experience Evaluation of G2 Crowd’s website by applying UX Research methods and heuristic evaluations.</p>
+                </div>
+
+              </section>
+						</div>
+
 					</div>
-					<div class="col-sm-8">
-						<img src="img/SAM.jpg" class="img-responsive center-block" />
-					</div>
+				</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper style1-alt ">
+				<div class="inner">
+					<ul class="menu" style="color:#fff">
+						<li><a href="uploads/Resume.pdf" target="_blank" >Resume</a></li>
+						<li><a href="About.html" >About Me</a></li>
+						<li><a href="mailto:kvmani@umich.edu">Email</a></li>
+					</ul><br>
+					<h3 >
+					<ul class="menu">
+						<a href="index.html"><li style="color:#fff; padding-left:0px">Back to Portfolio</li></a>
+					</ul>
+					</h3>
 				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- bloc-44 END -->
+			</footer>
 
-<!-- bloc-45 -->
-<div class="bloc bg-lines-dl2-bg bg-repeat bgc-white l-bloc" id="bloc-45">
-	<div class="container bloc-lg">
-		<div class="row">
-			<div class="col-sm-12">
-				<h3 class="mg-md tc-caribbean-green">
-					<strong>Card Sorting</strong>
-				</h3>
-				<p>
-					Card sorting is conduced after the study is completed. Each of the participants are asked to <strong>rank the different conditions in their order of preference</strong>. Once ranked, they will be asked to compare their ranking and discuss about it.
-				</p>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- bloc-45 END -->
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+			<!-- <script type="text/javascript" src="assets/slick/slick.min.js"></script> -->
 
-<!-- bloc-46 -->
-<div class="bloc bgc-white bg-crosses-s-bg l-bloc bg-repeat" id="bloc-46">
-	<div class="container bloc-sm">
-		<div class="row">
-			<div class="col-sm-12">
-				<h2 class="mg-md tc-caribbean-green ">
-					<strong>System Architecture</strong>
-				</h2>
-				<p>
-					The following is the system architecture of the smart speaker which was designed and developed as a prototype for the project.
-				</p>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-sm-6">
-				<img src="img/architecture.png" class="img-responsive" />
-			</div>
-			<div class="col-sm-6">
-				<div>
-				</div><img src="img/StilImage_sml.png" class="img-responsive mg-lg" />
-			</div>
-		</div>
-	</div>
-</div>
-<!-- bloc-46 END -->
+        <script src="//f.vimeocdn.com/js/froogaloop2.min.js"></script>
 
-<!-- bloc-47 -->
-<div class="bloc bg-tile-d-bg bg-repeat l-bloc bgc-white" id="bloc-47">
-	<div class="container bloc-sm">
-		<div class="row">
-			<div class="col-sm-12">
-				<h2 class="mg-md tc-caribbean-green ">
-					<strong>Next Steps</strong>
-				</h2>
-				<p class=" mg-lg">
-					We are currently in the process of conducting the user study and evaluation of the system. This will be followed by qualitative and quantitative analysis of the study data.&nbsp;
-				</p>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- bloc-47 END -->
-
-<!-- bloc-48 -->
-<div class="bloc bg-lines-dl2-bg bg-repeat bloc-bg-texture texture-darken-strong tc-gray-x11-gray bgc-white" id="bloc-48">
-	<div class="container bloc-md">
-		<div class="row">
-			<div class="col-sm-12">
-				<h2 class="text-center mg-md tc-caribbean-green">
-					Related Projects
-				</h2>
-			</div>
-		</div>
-		<div class="row voffset-lg">
-			<div class="col-sm-3">
-				<a href="g2crowd.html"><img src="img/g2crowd_placeit.jpg" class="img-responsive mg-md" /></a>
-				<h3 class="text-center mg-md tc-caribbean-green">
-					G2 Crowd
-				</h3>
-				<p class="text-left">
-					A case study of how we <strong>evaluated the usability</strong> of G2 Crowd&rsquo;s website (<strong>a software review platform</strong> used by a large user group around the world).<br>
-				</p>
-			</div>
-			<div class="col-sm-3">
-			</div>
-			<div class="col-sm-3">
-			</div>
-			<div class="col-sm-3">
-				<a href="rakshaa.html"><img src="img/map_placeit.jpg" class="img-responsive mg-md" /></a>
-				<h3 class="text-center mg-md tc-caribbean-green">
-					Rakshaa
-				</h3>
-				<p class="text-left">
-					A <strong>mobile application design</strong> aimed at changing the steriotype of an emergency application being boring and not so useful.<br>
-				</p>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- bloc-48 END -->
-
-<!-- bloc-49 -->
-<div class="bloc bgc-white bg-forrest d-bloc bloc-bg-texture texture-darken" id="bloc-49">
-	<div class="container bloc-lg">
-		<div class="row">
-			<div class="col-sm-12">
-				<h3 class="mg-md text-center">
-					Manikandan Kandadai Venkatesh
-				</h3>
-				<h4 class="mg-md text-center">
-					2018
-				</h4>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- bloc-49 END -->
-
-<!-- ScrollToTop Button -->
-<a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"><span class="fa fa-chevron-up"></span></a>
-<!-- ScrollToTop Button END-->
-
-
-</div>
-<!-- Main container END -->
-    
-   <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-90113013-1', 'auto');
-  ga('send', 'pageview');
-
-</script>  
-
-<!-- Hotjar Tracking Code for kvmani.com -->
 <script>
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:759227,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
-</body>
+        var iframe = $('#vimeo_player')[0];
+            player = $f(iframe);
+
+            player.addEvent('ready', function() {
+                player.api('setVolume', 0);
+            });
+        </script>
+
+	</body>
 </html>
