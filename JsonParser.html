@@ -1,0 +1,300 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by Pixelarity
+	pixelarity.com | hello@pixelarity.com
+	License: pixelarity.com/license
+-->
+<html>
+	<head>
+		<title>JSON Parsing - UX Design</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+
+	</head>
+	<body>
+
+		<!-- Sidebar -->
+			<section id="sidebar">
+				<div class="logo" >
+					<center>
+						<a href="index.html" class="image"><img src="images/Mani_logo2.png" alt="logo" data-position="top center" width="50%"/></a>
+					</center>
+				</div>
+				<div class="inner">
+					<h3>
+					<nav>
+						<ul>
+							<li><a class="correction" href="#intro">Parsing JSON Logs</a></li>
+							<li><a class="correction" href="#overview">Overview</a></li>
+							<!-- <li><a class="correction" href="#process">Design Process</a></li> -->
+							<li><a class="correction" href="#about">About the Problem</a></li>
+              <!-- <li><a class="correction" href="#problem">Problem</a></li> -->
+              <li><a  class="correction" href="#process">UX Process</a></li>
+              <li><a  class="correction" href="#challenges">Challenges & Constraints</a></li>
+              <li><a class="correction" href="index.html#intro">Portfolio</a></li>
+						</ul>
+					</nav>
+					</h3>
+				</div>
+
+				<div class="info">
+					<h3>
+					<li><a href="uploads/Resume.pdf" target="_blank">Resume</a></li>
+					<li><a href="About.html" >About Me</a></li>
+					<li><a href="mailto:mani92kv@gmail.com">Email</a></li>
+</h3>
+					<h2 class="social" >
+						<ul class="icons" style="display:flex; flex-direction: row; justify-content:flex-end;">
+							<li><a href="https://medium.com/@kvmani/" class="fa-medium" target="_blank"><span class="label">Medium</span></a></li>
+							<li><a href="https://www.linkedin.com/in/kvmani" class="fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+						</ul>
+					</h2>
+				</div>
+
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Intro -->
+					<section id="intro" class="wrapper style1 fullscreen fade-up" style="justify-content: center; background-image:url(images/JSONUI/v1.png)">
+						<div class="inner" style="text-align: center">
+							<h1>Parsing JSON Logs</h1>
+							<p style="color:#fff">UX & UI Design of feature in RSA NetWitness platform to parse JSON log sources</p>
+							<!-- <ul class="actions">
+								<li><a href="#one" class="button scrolly"></a></li>
+							</ul> -->
+						</div>
+					</section>
+
+				<!-- Two -->
+					<section id="overview" class="wrapper style3 fade-up">
+						<div class="inner">
+							<h2>Overview</h2>
+							<div class="features">
+								<section style="width: auto;">
+									<span class="icon major fa-question"></span>
+									<h3>The Problem</h3>
+									<p>
+                                        System administrators continually onboard new log sources to the RSA NetWitness SIEM application and need a more efficient interface to parse the structured logs and map it to searchable meta keys.
+                                    </p>
+								</section>
+								<section style="width: auto; border-top-width: 2px;">
+									<span class="icon major  fa-paint-brush"></span>
+                                    <h3>My Contribution</h3>
+                                    <p>
+										I made incremental UX and visual updates to an earlier version of the feature to add more functionalities.                                    </p>
+								</section>
+							</div>
+                            <br>
+                            <center>
+                                <h3>
+                                    Full case study and final visual designs of version 2 is available upon request.
+                                </h3>
+                            </center>
+							</div>
+					</section>
+
+
+					<section id="about" class="wrapper style3 fade-up" style="background-color:rgba(95, 201, 158, 0.9)">
+						<div class="inner">
+                            <h2>About the problem</h2>
+                            
+                            <h3 ># What is log parsing?</h3>
+
+                            <p>
+								RSA NetWitness is a SIEM (Security Information and Event Management) that aggregates and analyses activities across the entire IT infrastructure. 
+								SIEM collects security data from network devices, servers, domain controllers, etc. in the form of logs and packet data. This data is used to analyze and identify threats in the system. 
+								
+								One key component in this is the ability to ingest logs from different sources. In order to make the logs searchable in the platform, it needs to be recognized and mapped to meta keys (searchable keys optimized for performance). This process of recognizing and mapping log data to searchable meta keys is called parsing.
+															</p>
+
+                            <h3 ># About the feature</h3>
+                            <p>
+								Logs come in all different shapes and sizes. Some logs are plain text; some are structured (CSV, JSON, XML, etc.). The requirement is to design a feature that would enable system administrators to parse structured JSON logs. 
+
+								The legacy way of doing this was to manually edit the configuration files of the log decoders (a gateway for ingesting logs).  This was very inconvenient and prone to human errors resulting in unexpected outcomes. The UI makes this process more convenient for users to configure new and existing parsers. 
+								
+                            </p>
+                            <h3 ># Who is the user?</h3>
+                            <p>
+								Primary users of this system are system administrators responsible for integrations and maintaining the system's health and wellness.                             </p>
+                            <h3 ># The Objective</h3>
+                            <p>
+								The objective is to design the version 2 interface that would extend the current UI's capabilities to support more advanced use cases. 
+                            </p>
+							
+
+						</div>
+					</section>
+
+
+
+					<section id="process" class="wrapper style3 fade-up" style="background-color:rgba(95, 201, 158, 0.8)">
+						<div class="inner">
+							<h2>UX Process</h2>
+<br>
+<h3 ># Not a typical Double Diamond</h3>
+
+<img src="/images/JSONUI/process.jpeg" alt="" style="width: 100%;">
+<br><br>
+
+<p>
+    In the above double diamond process, my work fits the rear end of the process as the problem definition and brainstorming solutions were done as a part of the version-1 implementation. 
+
+For version-2 (which I was a part of), I made incremental changes to already established patterns and interactions. The designs and interactions were already tested and iterated over. Since the incremental updates needed minor changes, no new user research was performed instead, feedback from SMEs were taken into consideration. This vastly increased our speed and efficiency.
+</p>
+
+
+
+						</div>
+                    </section>
+                    
+
+
+		<section id="challenges" class="wrapper style3 fade-up" style="background-color:rgba(95, 201, 158, 0.7)">
+			<div class="inner">
+				<h2>Challenges & Constraints</h2>
+                <br>
+               
+                
+               
+				<section>
+					
+                    <p>
+						Working with the version-1 UI design proved to be helpful as it was already validated for usability. 
+
+
+						However, this also meant that there was a fundamental constrain in the layout around which new features need to be incorporated. 
+						
+						This constraint allowed me to develop different design options to incorporate advanced features without making layout changes to already developed version 1.
+											</p>
+                    
+                       
+                          
+				</section>
+				<br><br>
+				<img src="/images/JSONUI/v1.png" alt="" style="width: 100%;">
+                <center>
+                    <span >Version 1 of the JSON parser UI. Official documentation <a href="https://community.rsa.com/docs/DOC-113935" target="_blank">here</a>.</span>
+                </center>
+
+			</div>
+        </section>
+        <section id="prototype" class="wrapper style3 fade-up" style="background-color:rgba(95, 201, 158, 0.6)">
+			<div class="inner">
+			
+				<section>
+					
+					<img src="/images/JSONUI/v2.png" alt="" style="width: 100%;">
+                <center>
+					<span >Version 2 (Blurred for confidentiality) </span>
+					<br>
+					<br>
+                
+                    <h3>
+                        Full case study of version-2 and visual designs available upon request.
+                    </h3>
+                    
+				</center> 
+                          
+				</section>
+
+
+			</div>
+		</section>
+
+
+
+
+
+				<!-- Related Work -->
+				<section id="two" class="wrapper style1 fade-up">
+					<div class="inner">
+						<h2>Other Works</h2>
+						<div class="works features">
+
+							<section style="background-color: #444; background-size:100%; background-repeat:no-repeat;">
+								<a href="Alexa.html">
+									<div>
+										<h3>Alexa</h3>
+										<p>Using Human-Centered Design to better integrate privacy in smart speakers such as Amazon Echo and Google Home.</p>
+
+									</div>
+								</a>
+
+								</section>
+							<section style="background-color: #444; background-size:100%; background-repeat:no-repeat;">
+								<a href="G2.html">
+									<div>
+								<h3>G2 Crowd</h3>
+								<p>User Experience Evaluation of G2 Crowd’s website by applying UX Research methods and heuristic evaluations.</p>
+								</div>
+
+							</section>
+							<section style="    background-color: #444; background-size:100%; background-repeat:no-repeat;">
+								<a href="InfoViz.html">
+									<div>
+										<h3>Info Viz</h3>
+								<p>A group Project visualizing Hate Crimes across the United States from 2013-2016 created using d3.js</p>
+							</div>
+							</section>
+							<section style="    background-color: #444; background-size:100%; background-repeat:no-repeat;">
+								<a href="Visual.html">
+									<div>
+								<h3>Visual Designs</h3>
+								<p>My personal collection of digital design work which includes Posters, Logos, Personal Branding, etc
+
+</p>
+							</div></a></section>
+
+						</div>
+
+					</div>
+				</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper style1-alt ">
+				<div class="inner">
+					<ul class="menu" style="color:#fff">
+						<li><a href="uploads/Resume.pdf" target="_blank" >Resume</a></li>
+						<li><a href="About.html" >About Me</a></li>
+						<li><a href="mailto:mani92kv@gmail.com">Email</a></li>
+					</ul><br>
+					<h3 >
+					<ul class="menu">
+						<a href="index.html"><li style="color:#fff; padding-left:0px">Back to Portfolio</li></a>
+					</ul>
+					</h3>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+			<!-- <script type="text/javascript" src="assets/slick/slick.min.js"></script> -->
+
+        <script src="//f.vimeocdn.com/js/froogaloop2.min.js"></script>
+
+<script>
+        var iframe = $('#vimeo_player')[0];
+            player = $f(iframe);
+
+            player.addEvent('ready', function() {
+                player.api('setVolume', 0);
+            });
+        </script>
+
+	</body>
+</html>

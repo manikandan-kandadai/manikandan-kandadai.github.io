@@ -1,0 +1,398 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by Pixelarity
+	pixelarity.com | hello@pixelarity.com
+	License: pixelarity.com/license
+-->
+<html>
+	<head>
+		<title>Threat Hunting</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+
+	</head>
+	<body>
+
+		<!-- Sidebar -->
+			<section id="sidebar">
+				<div class="logo" >
+					<center>
+						<a href="index.html" class="image"><img src="images/Mani_logo2.png" alt="logo" data-position="top center" width="50%"/></a>
+					</center>
+				</div>
+				<div class="inner">
+					<h3>
+					<nav>
+						<ul>
+							<li><a class="correction" href="#intro">Cyber Threat Hunting UI</a></li>
+							<li><a class="correction" href="#overview">Overview</a></li>
+							<!-- <li><a class="correction" href="#process">Design Process</a></li> -->
+							<li><a class="correction" href="#hypothesis">Translating Hypothesis</a></li>
+              <!-- <li><a class="correction" href="#problem">Problem</a></li> -->
+              <li><a  class="correction" href="#hunting">Hunting</a></li>
+              <li><a  class="correction" href="#threats">Identify Threats</a></li>
+              <li><a class="correction" href="#solution">Final Solution</a></li>
+              <li><a class="correction" href="index.html#intro">Portfolio</a></li>
+						</ul>
+					</nav>
+					</h3>
+				</div>
+
+				<div class="info">
+					<h3>
+					<li><a href="uploads/Resume.pdf" target="_blank">Resume</a></li>
+					<li><a href="About.html" >About Me</a></li>
+					<li><a href="mailto:mani92kv@gmail.com">Email</a></li>
+</h3>
+					<h2 class="social" >
+						<ul class="icons" style="display:flex; flex-direction: row; justify-content:flex-end;">
+							<li><a href="https://medium.com/@kvmani/" class="fa-medium" target="_blank"><span class="label">Medium</span></a></li>
+							<li><a href="https://www.linkedin.com/in/kvmani" class="fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+						</ul>
+					</h2>
+				</div>
+
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Intro -->
+					<section id="intro" class="wrapper style1 fullscreen fade-up" style="justify-content: center; background-image:url(images/ThreatHunt/hunt.png)">
+						<div class="inner" style="text-align: center">
+							<h1>Cyber Threat Hunting UI</h1>
+							<p style="color:#fff">Web UI Design for cyber security analysts to hunt for security threats.</p>
+							<!-- <ul class="actions">
+								<li><a href="#one" class="button scrolly"></a></li>
+							</ul> -->
+						</div>
+					</section>
+
+				<!-- Two -->
+					<section id="overview" class="wrapper style3 fade-up">
+						<div class="inner">
+							<h2>Overview</h2>
+							<div class="features" style="display: flex; flex-direction: column;">
+								<section style="width: auto;">
+									<span class="icon major fa-question"></span>
+									<h3>The Problem</h3>
+									<p>
+                                        Cyber Threat hunters are continually sifting through various data to uncover potential threats supported by their hypothesis. They need an Interface that would enable them to explore data and validate this hypothesis.
+                                    </p>
+								</section>
+								<section style="width: auto; border-top-width: 2px;">
+									<span class="icon major fa-exclamation-triangle"></span>
+                                    <h3>Disclaimer</h3>
+                                    <p>This is a <b><u>concept UI</u></b> inspired by the complexity of workflow in performing threat hunting</p>
+								</section>
+								<!-- <section>
+									<span class="icon major fa-quote-left"></span>
+									<h3>Assumptions</h3>
+									<p></p>
+								</section>
+								<section>
+									<span class="icon major fa-user"></span>
+									<h3>Team</h3>
+                                    <p>This is one of my personal side projects</p>
+								</section> -->
+
+                            </div>
+                            <br>
+							<h3>About Cyber Threat hunting</h3>
+							<!-- <img src="images/rakshaa/DesignP.png" alt="" style="width:100%; border-radius:5px"> -->
+							Cyber Threat hunting involves proactively looking for security threats that evade traditional defense mechanisms. This requires specialists to explore and sift through various data to validate certain hypotheses on potential threats in their environment.
+							 <br><br>
+							<h3>The Threat hunting process</h3>
+							<br>
+                            <center>
+								<img src="images/ThreatHunt/process.png" alt="" style="width:80%; border-radius:5px;" >
+								<br>
+								source: <a href="https://resources.infosecinstitute.com/category/enterprise/threat-hunting/#gref" target="_blank">https://resources.infosecinstitute.com/category/enterprise/threat-hunting/</a>
+								<br><br>
+							</center>
+                            
+                            <h3>Scope</h3>
+                            For the UI Concept design, we will be specifically looking at <b>"Establishing hypothesis, Hunting and Identifying threats."</b>
+                            <br><br>
+							<ul class="actions" style="display:flex; justify-content:center">
+								<li><a href="#solution" class="button" style="background-color:rgba(255,255,255,0.2)" ><span >Go to UI Design</span></a></li>
+							</ul>
+						</div>
+					</section>
+
+
+					<section id="hypothesis" class="wrapper style3 fade-up" style="background-color:rgba(95, 201, 158, 0.9)">
+						<div class="inner">
+                            <h2>Translating Hypothesis</h2>
+                            
+<br>
+							<h3 ># Querying</h3>
+							<section>
+								
+
+                                <p>
+                                    Once a hypothesis has been formed, the next step is to transform that into queries that the system can understand. Most products query the underlying data directly (searching for a specific value). This approach may be quick and efficient for the database, however <b>this creates two user problems.
+
+									</b>
+									<ol>
+                                        <li>New analysts have to <b>learn and remember underlying data</b> to query the system and validate their hypothesis</li>
+										<li>Querying the data directly means users will have to <b>translate their hypothesis into queries</b> (that the system can understand) on their own. This is an <b>additional mental effort</b> which can be avoided and better used for analysis</li>
+									</ol>
+                                </p>
+
+                            </section>
+                            <h3 ># Solution</h3>
+							<section>
+								
+
+                                <p>
+                                    One possible solution is to have an <b>analysis layer</b> that is abstracted away from the underlying data. 
+                                    This higher-level layer will translate the hypothesis (in a human language) into queries that the backend would understand. 
+									Having an analysis layer would enable users to query malicious behaviors directly rather than looking for specific data points that would suggest the presence of a threat.
+									<br><br>
+                                    <img src="/images/ThreatHunt/query.png" alt="" style="width: 100%;">
+                                    <br>
+                                    This concept is not new, the above query language is similar to <a href="https://neo4j.com/docs/cypher-manual/current/introduction/#cypher-introduction" target="_blank">cypher query language</a> which uses a graph database.
+                                
+                                </p>
+
+							</section>
+
+						</div>
+					</section>
+
+
+
+					<section id="hunting" class="wrapper style3 fade-up" style="background-color:rgba(95, 201, 158, 0.8)">
+						<div class="inner">
+							<h2>Hunting</h2>
+<br>
+<h3 ># Multiple leads</h3>
+<section>
+<br>
+<div style="display: flex;">
+    <div style="flex-basis: 80%; padding-right: 30px;">
+        <h3>The Problem</h3>
+        <p>
+			Once a hypothesis is defined and queried for, there are multiple ways an analyst can look at the data. This poses an exciting workflow challenge for designing. The primary objective here is to design an interface that would allow users to explore the data starting from any lead. 
+        </p>
+    
+        <h3>Solution</h3>
+        <p> 
+			The image on the right lists all potential leads grouped under their entities (Users, Files, Network, Process). This is always available on the interface and can be used by analysts to mix and match them while hunting. This list is also dynamic, reacting to the queries that are running. A new lead can be added to a query at any time by clicking on the <el class=" fa fa-plus"></el> icon.        </p>
+        <p>
+			When combined with an interface that allows for adding various leads, the analysis layer is a powerful toolkit that allows for quick and more efficient triage.
+		        </p>
+
+    </div>
+    
+    <img src="images/ThreatHunt/leads.png" alt="" style="width:20%;border-radius:5px " style="flex-basis: 40% 30%;">
+
+</div>
+</section>
+<br><br>
+<h3 ># Dealing with Noise</h3>
+<section>
+<br>
+<div >
+    <div>
+        <h3>The Problem</h3>
+        <p>
+			Once the query returns a result, the data can be inundated with noise. There could be data about a real threat (signals) buried under thousands of other data points. This is like finding a needle in a haystack. It is essential to enable users to identify and differentiate those signals from noise.
+        </p>
+    
+        <h3>Solution</h3>
+        <p> 
+			A lot of <b> Machine Learning models </b> are under development to model user behavior across data. This behavior modeling would help identify real threats from false positives. One approach to deal with this is entropy-based anomaly detection.
+            Entropy is the measure of randomness in data. If there is an encoded payload in network traffic, the entropy value will be different from normal network traffic. This subtle change in entropy can be identified with precision using machine learning techniques. When implemented well, entropy can be a great toolkit to reduce the noise and elevate signals.
+
+		</p>
+       
+
+    </div>
+    
+    <img src="images/ThreatHunt/entropy.png" alt="" style="width:100%;border-radius:5px " >
+<p>
+	This entropy chart highlights a correlation between abnormal network and file process activity that spike simultaneously. When Machine learning models are employed, it can detect these spikes and highlight the correlation between network and file activities.
+</p>
+</div>
+</section>
+
+
+						</div>
+					</section>
+
+
+		<section id="threats" class="wrapper style3 fade-up" style="background-color:rgba(95, 201, 158, 0.7)">
+			<div class="inner">
+				<h2>Indentify Threats</h2>
+				<br>
+				<section>
+					<h3 ># Working with the data</h3>
+					<br>
+
+                    <p>
+                        Machine learning models jump-start the analysis part but elevating signals from noise. The signals are now available to be closely examined by analysts by digging through data and eliminating false positives. At this stage, users need an efficient way to filter and look at hundreds and thousands of data points to determine if the activity signifies a real threat. 
+                    
+                        <h3 >The problem</h3>
+						The complexity of analysis lies in that every data connects to every other data point through a non-obvious relationship. These relationships are incredibly vital for threat hunting as it sheds more context on the signals. The problem is that the data could be spread across different time periods, making the analysis even harder.                        <br><br>
+                        <h3 >Solution</h3>
+						Fortunately, there are frameworks such as the <a href="https://attack.mitre.org/"><b>MITRE Att&ck matrix</b></a> that helps identify anomalous behaviors. When combined with other contextual information (Enrichments), this framework can help qualify the observed behavior into normal or anomalous behavior. The enrichments can be from internal or external sources.                      
+                        
+
+                        </p>
+
+
+					<img src="images/ThreatHunt/explorer.png" alt="" style="width:100%;border-radius:5px ">
+
+                    
+               
+                    <p>
+                        The above visualization helps analysts further explore the relationships between the queried parameters. The enrichments and other qualifying information are overlayed on top of the data points to provide more context. Users can turn this off at any point in time if needed. The visualization is also dynamic and interactive. Users can choose to look at all data points or select portions of visualizations for more information.
+
+					</p>
+                    <h3 ># Why Parallel Co-ordinates</h3> 
+                    <p>
+                        
+                        The choice of parallel coordinates as a visualization technique is because of its advantages for multi-variate data analysis over other charting types. 
+<ol>
+<li>
+With parallel coordinates, each axis can have a different scale and point to relationships across different variables. Parallel coordinates also scale well for multiple variables. </li>
+<li> The only downside of using parallel coordinates is that the visualization can get to an unusable stage with plenty of data points. However, this is no issue in this situation as the data is already reduced to a limited set through entropy-based Machine Learning techniques.
+</li>
+</ol>        </p>
+
+				</section>
+
+
+			</div>
+		</section>
+
+		<section id="solution" class="wrapper style3 fade-up" style="background-color:rgba(95, 201, 158, 0.6)">
+			<div class="inner">
+				<h2>Final Solution</h2>
+				<br>
+<section>
+
+	<img src="images/ThreatHunt/hunt.png" alt="" style="width:100%;border-radius:5px ">
+<br><br><br>
+        <section>
+            <br>
+            <h3 ># How it all works together</h3>
+
+          <p>
+			The entire UI design works as one and adds value to the threat hunting workflow. Once a hypothesis is queried for, users can start and explore data. If some users do not want to work with graphs and charts, they can always disable and collapse them to work directly with the data table if that suits their workflow.
+          </p>
+          
+
+        </section>
+        <section>
+          
+            <h3 ># Caveats</h3>
+
+            <p>
+                <ol>
+                    <li>This is a concept design and hence not validated for any technical accuracy and feasibility</li>
+                    <li>The mockups were designed based on research and feedback from a few security researchers. However, more research is needed to validate assumptions and constraints</li>
+                    <li>Performance of this interface can be questionable given the massive amount of data d3 will work with.</li>               </ol>
+            </p>
+
+        </section>
+
+
+			</div>
+		</section>
+
+
+
+
+				<!-- Related Work -->
+				<section id="two" class="wrapper style1 fade-up">
+					<div class="inner">
+						<h2>Other Works</h2>
+						<div class="works features">
+
+							<section style="background-color: #444; background-size:100%; background-repeat:no-repeat;">
+								<a href="Alexa.html">
+									<div>
+										<h3>Alexa</h3>
+										<p>Using Human-Centered Design to better integrate privacy in smart speakers such as Amazon Echo and Google Home.</p>
+
+									</div>
+								</a>
+
+								</section>
+							<section style="background-color: #444; background-size:100%; background-repeat:no-repeat;">
+								<a href="G2.html">
+									<div>
+								<h3>G2 Crowd</h3>
+								<p>User Experience Evaluation of G2 Crowd’s website by applying UX Research methods and heuristic evaluations.</p>
+								</div>
+
+							</section>
+							<section style="    background-color: #444; background-size:100%; background-repeat:no-repeat;">
+								<a href="InfoViz.html">
+									<div>
+										<h3>Info Viz</h3>
+								<p>A group Project visualizing Hate Crimes across the United States from 2013-2016 created using d3.js</p>
+							</div>
+							</section>
+							<section style="    background-color: #444; background-size:100%; background-repeat:no-repeat;">
+								<a href="Visual.html">
+									<div>
+								<h3>Visual Designs</h3>
+								<p>My personal collection of digital design work which includes Posters, Logos, Personal Branding, etc
+
+</p>
+							</div></a></section>
+
+						</div>
+
+					</div>
+				</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper style1-alt ">
+				<div class="inner">
+					<ul class="menu" style="color:#fff">
+						<li><a href="uploads/Resume.pdf" target="_blank" >Resume</a></li>
+						<li><a href="About.html" >About Me</a></li>
+						<li><a href="mailto:mani92kv@gmail.com">Email</a></li>
+					</ul><br>
+					<h3 >
+					<ul class="menu">
+						<a href="index.html"><li style="color:#fff; padding-left:0px">Back to Portfolio</li></a>
+					</ul>
+					</h3>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+			<!-- <script type="text/javascript" src="assets/slick/slick.min.js"></script> -->
+
+        <script src="//f.vimeocdn.com/js/froogaloop2.min.js"></script>
+
+<script>
+        var iframe = $('#vimeo_player')[0];
+            player = $f(iframe);
+
+            player.addEvent('ready', function() {
+                player.api('setVolume', 0);
+            });
+        </script>
+
+	</body>
+</html>
