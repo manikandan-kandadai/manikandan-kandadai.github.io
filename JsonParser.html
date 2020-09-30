@@ -43,7 +43,10 @@
 							<li><a class="correction" href="#about">About the Problem</a></li>
               <!-- <li><a class="correction" href="#problem">Problem</a></li> -->
               <li><a  class="correction" href="#process">UX Process</a></li>
-              <li><a  class="correction" href="#challenges">Challenges & Constraints</a></li>
+			  <li><a  class="correction" href="#challenges">Workflow</a></li>
+			  <li><a  class="correction" href="#features">Features</a></li>
+			  <li><a  class="correction" href="#flow">Workflow</a></li>
+			  <li><a  class="correction" href="#design">Design Decisions</a></li>
               <li><a class="correction" href="index.html#intro">Portfolio</a></li>
 						</ul>
 					</nav>
@@ -94,15 +97,17 @@
 								</section>
 								<section style="width: auto; border-top-width: 2px;">
 									<span class="icon major  fa-paint-brush"></span>
-                                    <h3>My Contribution</h3>
+                                    <h3>The Team</h3>
                                     <p>
-										I made incremental UX and visual updates to an earlier version of the feature to add more functionalities.                                    </p>
+										This project was done by a team of 2 designers including me. In addition to designing, my contribution also included performing UX Research - Usability Testing and Interviews	
+									
+									</p>
 								</section>
 							</div>
                             <br>
                             <center>
                                 <h3>
-                                    Full case study and final visual designs of version 2 is available upon request.
+                                    Full case study is available upon request.
                                 </h3>
                             </center>
 							</div>
@@ -116,25 +121,17 @@
                             <h3 ># What is log parsing?</h3>
 
                             <p>
-								RSA NetWitness is a SIEM (Security Information and Event Management) that aggregates and analyses activities across the entire IT infrastructure. 
-								SIEM collects security data from network devices, servers, domain controllers, etc. in the form of logs and packet data. This data is used to analyze and identify threats in the system. 
-								
-								One key component in this is the ability to ingest logs from different sources. In order to make the logs searchable in the platform, it needs to be recognized and mapped to meta keys (searchable keys optimized for performance). This process of recognizing and mapping log data to searchable meta keys is called parsing.
-															</p>
+								RSA NetWitness is a SIEM (Security Information and Event Management) that aggregates and analyses security events across the entire IT infrastructure. SIEM collects security data from network devices, servers, domain controllers, etc. from logs and packet data to identify threats. To make the logs searchable in the platform, it needs to be recognized and mapped to meta keys (searchable keys optimized for performance). This process of recognizing and mapping log data to searchable meta keys is called parsing.
+								</p>
 
-                            <h3 ># About the feature</h3>
+                            
+                            <h3 ># Who are the users?</h3>
                             <p>
-								Logs come in all different shapes and sizes. Some logs are plain text; some are structured (CSV, JSON, XML, etc.). The requirement is to design a feature that would enable system administrators to parse structured JSON logs. 
-
-								The legacy way of doing this was to manually edit the configuration files of the log decoders (a gateway for ingesting logs).  This was very inconvenient and prone to human errors resulting in unexpected outcomes. The UI makes this process more convenient for users to configure new and existing parsers. 
-								
-                            </p>
-                            <h3 ># Who is the user?</h3>
-                            <p>
-								Primary users of this system are system administrators responsible for integrations and maintaining the system's health and wellness.                             </p>
+								Primary users of this system are system administrators responsible for integrations and maintaining the system's health and wellness.	
+							</p>
                             <h3 ># The Objective</h3>
                             <p>
-								The objective is to design the version 2 interface that would extend the current UI's capabilities to support more advanced use cases. 
+								The objective is to design an interface that would enable users to easily parse structured JSON logs and extend the current UI's capabilities to support more advanced use cases.
                             </p>
 							
 
@@ -147,15 +144,20 @@
 						<div class="inner">
 							<h2>UX Process</h2>
 <br>
-<h3 ># Not a typical Double Diamond</h3>
 
-<img src="/images/JSONUI/process.jpeg" alt="" style="width: 100%;">
+
+<img src="/images/JSONUI/process.png" alt="" style="width: 100%;">
 <br><br>
-
+<h3 ># Whats Changed?</h3>
 <p>
-    In the above double diamond process, my work fits the rear end of the process as the problem definition and brainstorming solutions were done as a part of the version-1 implementation. 
+    We followed the double-diamond process of UX. However, we did change the process to accommodate our needs. The following is the process that worked for us.
 
-For version-2 (which I was a part of), I made incremental changes to already established patterns and interactions. The designs and interactions were already tested and iterated over. Since the incremental updates needed minor changes, no new user research was performed instead, feedback from SMEs were taken into consideration. This vastly increased our speed and efficiency.
+	<ol>
+		<li>Perform upfront research to understand requirements and workflow (SME or Users)</li>
+		<li>Utilize design reviews for feedback and critiques (Designers & PM)</li>
+		<li>Final Wireframe or Prototypes - Usability Testing with Users</li>
+	</ol>
+
 </p>
 
 
@@ -167,55 +169,199 @@ For version-2 (which I was a part of), I made incremental changes to already est
 
 		<section id="challenges" class="wrapper style3 fade-up" style="background-color:rgba(95, 201, 158, 0.7)">
 			<div class="inner">
-				<h2>Challenges & Constraints</h2>
+				
+				<h2>Log Parser Workflow</h2>
+                <br>
+				<img src="/images/JSONUI/workflow.png" alt="" style="width: 100%;">
+                
+			   <br><br>
+			   <h3 ># User Pain points</h3>
+				
+
+				<section>
+					
+                    <p>
+						The legacy way of doing it was to edit the log parser config files in a log decoder to change how the logs are parsed for different log types. This approach has several disadvantages
+					<ol>
+						<li>
+							Bulk changes can be unmanageable
+						</li>
+						<li>
+							The config files are prone to human error, and this can lead to unexpected results
+						</li>
+						<li>
+							New parsers would require more thought while onboarding.
+						</li>
+					</ol>	</p>
+                    
+                       
+                          
+				</section>
+		
+			
                 <br>
                
                 
                
 				<section>
-					
+					<h3># Challenges & Constraints</h3>
                     <p>
-						Working with the version-1 UI design proved to be helpful as it was already validated for usability. 
-
-
-						However, this also meant that there was a fundamental constrain in the layout around which new features need to be incorporated. 
-						
-						This constraint allowed me to develop different design options to incorporate advanced features without making layout changes to already developed version 1.
-											</p>
+						There were several technical constraints and trade-offs that were made while designing the interface. The following are some of the significant constraints for this project.
+					<ol>
+						<li>
+							Multiple log types - logs can be of any kind, each requiring a change in the backend data structure. This resulted in the need for the UI to be slightly different for handling different types.
+						</li>
+						<li>
+							To identify an MVP that works with the timeline. This involved identifying the minimal usable features that can be released.
+						</li>
+					</ol>
+					</p>
                     
                        
                           
 				</section>
-				<br><br>
-				<img src="/images/JSONUI/v1.png" alt="" style="width: 100%;">
-                <center>
-                    <span >Version 1 of the JSON parser UI. Official documentation <a href="https://community.rsa.com/docs/DOC-113935" target="_blank">here</a>.</span>
-                </center>
+
+			
 
 			</div>
         </section>
-        <section id="prototype" class="wrapper style3 fade-up" style="background-color:rgba(95, 201, 158, 0.6)">
+        <section id="features" class="wrapper style3 fade-up" style="background-color:rgba(95, 201, 158, 0.6)">
 			<div class="inner">
 			
 				<section>
+					<h2>Features</h2>
 					
-					<img src="/images/JSONUI/v2.png" alt="" style="width: 100%;">
-                <center>
-					<span >Version 2 (Blurred for confidentiality) </span>
-					<br>
-					<br>
-                
-                    <h3>
-                        Full case study of version-2 and visual designs available upon request.
-                    </h3>
-                    
-				</center> 
+					<img src="/images/JSONUI/features.png" alt="" style="width: 100%;">
+					<br><br>
+				
+						<h3># Manage Parsers</h3> 
+						<p>Lists parsers that can be installed on Log Decoders. New parsers can be added to this list using the ‘add parser’ button </p>
+
+						<h3># Editor & Mapping View</h3>
+						<p>This view helps visualize what portions of the log message is mapped to a Meta key.</p> 
+						
+						<h3># Mappings Column</h3>
+						<p>
+							This lists a set of rules that are configured to map log messages to meta keys. A rule can map multiple log messages to one or many Meta keys
+						</p> 
+						
+						<h3># Mapping Details</h3>
+						<p>
+							The configuration details for a selected rule
+						</p>
+					
                           
 				</section>
 
 
 			</div>
 		</section>
+		<section id="flow" class="wrapper style3 fade-up" style="background-color:rgba(95, 201, 158, 0.5)">
+			<div class="inner">
+			
+				<section>
+					<h2>User Flows</h2>
+					<p>
+						The following is the high-level interaction flow that enables users to paste in a log to select and parse the required information into Meta keys.
+					</p>
+					<br>
+					<img src="/images/JSONUI/Flow diagram.png" alt="" style="width: 100%;">
+					
+                          
+				</section>
+
+
+			</div>
+		</section>
+		<section id="design" class="wrapper style3 fade-up" style="background-color:rgba(95, 201, 158, 0.4)">
+			<div class="inner">
+			
+				<section>
+					<h2>Design Alternatives & Decisions</h2>
+					<br>
+					<h3># View Modes</h3> <br>
+					<div style="display: flex; flex-direction: row; justify-content: space-around;">
+						<p style="flex-basis: 50%; margin-right: 20px;">
+							In option1, the toggle to switch modes was interesting however, it was not clear if users were in the editing mode when turned off
+						</p>
+						<div>
+							<img src="/images/JSONUI/views/option1.png" alt="" style="width: 100%;">
+						<center>Option 1</center>
+						</div>
+						
+					</div>
+					<br>
+					<div style="display: flex; flex-direction: row; justify-content: space-around;">
+						<p style="flex-basis: 50%; margin-right: 20px;">
+							In option 2, the button groups worked well, but during SME and users' feedback, it was identified that the labels were not clear enough. 'Code View' vs 'Tree View' meant nothing to users as to what they can do with it.
+						</p>
+						<div>
+							<img src="/images/JSONUI/views/option2.png" alt="" style="width: 100%;">
+						<center>Option 2</center>
+						</div>
+						
+					</div>
+					<br>
+					<div style="display: flex; flex-direction: row; justify-content: space-around;">
+						<p style="flex-basis: 50%; margin-right: 20px;">
+							Option 3 was the final version that worked well. Button groups were retained but with label changes that indicate their uses.
+						</p>
+						<div>
+							<img src="/images/JSONUI/views/option3.png" alt="" style="width: 100%;">
+						<center>Option 3</center>
+						</div>
+						
+					</div>
+
+					<br><br>
+					<h3># Single and Multi-select Interactions</h3> <br>
+					<div style="display: flex; flex-direction: row; justify-content: space-around;">
+						
+						<div style="flex-basis: 50%; margin-right: 20px;">
+							<p>
+								In the mapping mode, clicking on a specific mapping on the right will highlight its corresponding Key-Value pair on the left. This is true for the other way around as well. 
+					
+					<br>
+								The highlight color is the default selection color indicating that the highlighted Key-Value pair is being actively worked on. Once a key has been configured, the color changes to green to indicate that it is modified.
+							</p>
+						</div>
+						<div>
+							<img src="/images/JSONUI/selects/1.png" alt="" style="width: 100%;">
+						<center>Highlighting behavior</center>
+						</div>
+						
+					</div>
+					<br>
+					<div style="display: flex; flex-direction: row; justify-content: space-around;">
+						<p style="flex-basis: 50%; margin-right: 20px;">
+							If users want to select a single Key/Value in the log message and tag them, they can click on the Key or Value and click on 'Add Selection to  Mappings' button.
+						</p>
+						<div>
+							<img src="/images/JSONUI/selects/2.png" alt="" style="width: 100%;">
+						<center>Single Select behavior</center>
+						</div>
+						
+					</div>
+					<br>
+					<div style="display: flex; flex-direction: row; justify-content: space-around;">
+						<p style="flex-basis: 50%; margin-right: 20px;">
+							This is true for multi-select as well. Holding down shift or ctrl/cmd and clicking on the rows will enable a multi-select option. This feature is handy if users want to tag only specific keys and don't want to auto-extract all the keys.
+						</p>
+						<div>
+							<img src="/images/JSONUI/selects/3.png" alt="" style="width: 100%;">
+						<center>Multi-Select behavior</center>
+						</div>
+						
+					</div>
+					
+                          
+				</section>
+
+
+			</div>
+		</section>
+
+
 
 
 
