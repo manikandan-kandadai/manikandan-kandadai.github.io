@@ -44,9 +44,9 @@
               <!-- <li><a class="correction" href="#problem">Problem</a></li> -->
               <li><a  class="correction" href="#process">UX Process</a></li>
 			  <li><a  class="correction" href="#challenges">Workflow</a></li>
-			  <li><a  class="correction" href="#features">Features</a></li>
 			  <li><a  class="correction" href="#flow">Workflow</a></li>
 			  <li><a  class="correction" href="#design">Design Decisions</a></li>
+			  <li><a  class="correction" href="#features">Features</a></li>
 			  <li><a  class="correction" href="#prototype">Prototype</a></li>
               <li><a class="correction" href="index.html#intro">Portfolio</a></li>
 						</ul>
@@ -171,7 +171,7 @@
 		<section id="challenges" class="wrapper style3 fade-up" style="background-color:rgba(95, 201, 158, 0.7)">
 			<div class="inner">
 				
-				<h2>Log Parser Workflow</h2>
+				<h2>Log Parser Workflow (Backend)</h2>
                 <br>
 				<img src="/images/JSONUI/workflow.png" alt="" style="width: 100%;">
                 
@@ -226,47 +226,19 @@
 
 			</div>
         </section>
-        <section id="features" class="wrapper style3 fade-up" style="background-color:rgba(95, 201, 158, 0.6)">
+        
+		<section id="flow" class="wrapper style3 fade-up" style="background-color:rgba(95, 201, 158, 0.6)">
 			<div class="inner">
 			
 				<section>
-					<h2>Features</h2>
-					
-					<img src="/images/JSONUI/features.png" alt="" style="width: 100%;">
-					<br><br>
-				
-						<h3># Manage Parsers</h3> 
-						<p>Lists parsers that can be installed on Log Decoders. New parsers can be added to this list using the ‘add parser’ button </p>
-
-						<h3># Editor & Mapping View</h3>
-						<p>This view helps visualize what portions of the log message is mapped to a Meta key.</p> 
-						
-						<h3># Mappings Column</h3>
-						<p>
-							This lists a set of rules that are configured to map log messages to meta keys. A rule can map multiple log messages to one or many Meta keys
-						</p> 
-						
-						<h3># Mapping Details</h3>
-						<p>
-							The configuration details for a selected rule
-						</p>
-					
-                          
-				</section>
-
-
-			</div>
-		</section>
-		<section id="flow" class="wrapper style3 fade-up" style="background-color:rgba(95, 201, 158, 0.5)">
-			<div class="inner">
-			
-				<section>
-					<h2>User Flows</h2>
+					<h2>User Interaction Flows</h2>
 					<p>
 						The following is the high-level interaction flow that enables users to paste in a log to select and parse the required information into Meta keys.
 					</p>
 					<br>
-					<img src="/images/JSONUI/Flow diagram.png" alt="" style="width: 100%;">
+					<img src="/images/JSONUI/Flowchart.png" alt="" style="width: 100%;">
+					<br><br>
+					<img src="/images/JSONUI/mock_flows.png" alt="" style="width: 100%;">
 					
                           
 				</section>
@@ -274,7 +246,8 @@
 
 			</div>
 		</section>
-		<section id="design" class="wrapper style3 fade-up" style="background-color:rgba(95, 201, 158, 0.4)">
+		
+		<section id="design" class="wrapper style3 fade-up" style="background-color:rgba(95, 201, 158, 0.5)">
 			<div class="inner">
 			
 				<section>
@@ -355,6 +328,37 @@
 						
 					</div>
 					<br><br>
+					
+                          
+				</section>
+
+
+			</div>
+		</section>
+		<section id="features" class="wrapper style3 fade-up" style="background-color:rgba(74, 248, 179, 0.4)">
+			<div class="inner">
+			
+				<section>
+					<h2>Features</h2>
+					
+					<img src="/images/JSONUI/features.png" alt="" style="width: 100%;">
+					<br><br>
+				
+						<h3># Manage Parsers</h3> 
+						<p>Lists parsers that can be installed on Log Decoders. New parsers can be added to this list using the ‘add parser’ button </p>
+
+						<h3># Editor & Mapping View</h3>
+						<p>This view helps visualize what portions of the log message is mapped to a Meta key.</p> 
+						
+						<h3># Mappings Column</h3>
+						<p>
+							This lists a set of rules that are configured to map log messages to meta keys. A rule can map multiple log messages to one or many Meta keys
+						</p> 
+						
+						<h3># Mapping Details</h3>
+						<p>
+							The configuration details for a selected rule
+						</p>
 					
                           
 				</section>
