@@ -91,6 +91,13 @@
 							<h2>Overview</h2>
 							<div class="features">
 								<section style="width: auto;">
+									<span class="icon major fa-building"></span>
+									<h3>The Product</h3>
+									<p>
+                                        RSA Netwitness Platform (RNWP) is one among a portfolio of software products that RSA Security develops. RNWP is a industry leading cybersecurity SIEM product used by thousands of security professionals around the world.
+                                    </p>
+								</section>
+								<section style="width: auto; border-top-width: 2px;">
 									<span class="icon major fa-question"></span>
 									<h3>The Problem</h3>
 									<p>
@@ -98,20 +105,28 @@
                                     </p>
 								</section>
 								<section style="width: auto; border-top-width: 2px;">
-									<span class="icon major  fa-paint-brush"></span>
-                                    <h3>The Team</h3>
+									<span class="icon major  fa-users"></span>
+                                    <h3>Roles & Responsibilities</h3>
                                     <p>
-										This project was done by a team of 2 designers including me. In addition to designing, my contribution also included performing UX Research - Usability Testing and Interviews	
+										My contribution in this project is designing the workflow, interactions and the UI of the feature. I also conducted UX research (usability testing, interviews) on the prototypes to validate ideas and presented the insights to the product team (PM, Scrum teams, SMEs)
+									</p>
+								</section>
+								<section style="width: auto; border-top-width: 2px;">
+									<span class="icon major  fa-balance-scale"></span>
+                                    <h3>The Outcome</h3>
+                                    <p>
+										This feature replaced the legacy workflow of using command line tools to configure log parsing. This resulted in <strong> reducing user's time by 50% </strong>for configuring and managing log sources. This feature also <strong> reduced human errors by as much as 90% </strong>from previous methods of manual command line tools.
+
 									
 									</p>
 								</section>
 							</div>
                             <br>
-                            <center>
+                            <!-- <center>
                                 <h3>
                                     Full case study is available upon request.
                                 </h3>
-                            </center>
+                            </center> -->
 							</div>
 					</section>
 
@@ -127,15 +142,15 @@
 								</p>
 
                             
-                            <h3 ># Who are the users?</h3>
-                            <p>
-								Primary users of this system are system administrators responsible for integrations and maintaining the system's health and wellness.	
-							</p>
-                            <h3 ># The Objective</h3>
-                            <p>
-								The objective is to design an interface that would enable users to easily parse structured JSON logs and extend the current UI's capabilities to support more advanced use cases.
-                            </p>
-							
+								<h3 ># The Objective</h3>
+								<p>
+									The objective is to design an interface that would enable users to easily parse structured JSON logs and extend the current UI's capabilities to support more advanced use cases.
+								</p>
+								
+								<h3 ># Who are the users?</h3>
+								<p>
+									Primary users of this system are system administrators responsible for integrations and maintaining the system's health and wellness.	
+								</p>
 
 						</div>
 					</section>
@@ -171,39 +186,45 @@
 
 		<section id="challenges" class="wrapper style3 fade-up" style="background-color:rgba(95, 201, 158, 0.7)">
 			<div class="inner">
+				<h2>Log Parser Workflow </h2>
 				
-				<h2>Log Parser Workflow (Backend)</h2>
-                <br>
+				<h3 ># Meet Norm</h3>
+				
+				<img src="/images/JSONUI/Persona.png" alt="" style="width: 100%;">
+				
+				
+				<br><br>
+				<br>
+				<h3 ># User Pain points</h3>
 				<img src="/images/JSONUI/workflow.png" alt="" style="width: 100%;">
-                
-			   <br><br>
-			   <h3 ># User Pain points</h3>
 				
-
+			   <br><br>
 				<section>
-					
-                    <p>
-						The legacy way of doing it was to edit the log parser config files in a log decoder to change how the logs are parsed for different log types. This approach has several disadvantages
-					<ol>
-						<li>
-							Bulk changes can be unmanageable
-						</li>
-						<li>
-							The config files are prone to human error, and this can lead to unexpected results
-						</li>
-						<li>
-							New parsers would require more thought while onboarding.
-						</li>
-					</ol>	</p>
-                    
-                       
-                          
-				</section>
-		
+				   
+				   <p>
+					   The legacy way of doing it was to edit the log parser config files in a log decoder to change how the logs are parsed for different log types. This approach has several disadvantages
+						   <strong>
+							<ol>
+								<li>
+									Bulk changes can be unmanageable
+								</li>
+								<li>
+									The config files are prone to human error, and this can lead to unexpected results
+								</li>
+								<li>
+									New parsers would require more thought while onboarding.
+								</li>
+							</ol>	</p>
+							
+						</strong>
+							
+							
+						<hr />
+						</section>
+						
 			
                 <br>
                
-                
                
 				<section>
 					<h3># Challenges & Constraints</h3>
@@ -389,10 +410,10 @@
 			<div class="inner">
 			
 				<section>
-					<h2>Outcomes & Future</h2>
+					<h2>Outcomes & Lessons learned</h2>
 					<p>
-						The MVP of the feature was released and users are actively using it. Results from beta testing and early adopters were very positive as this has <strong> reduced their time by almost 50% </strong> and has made it easy for them to manage parsers in the longterm.
-						<br><br> In the future, the MVP will be followed by adding additional functionalities that will help augment the experience of using this feature while also allowing us to iterate over the MVP from the data collected.
+						The MVP of the feature was released and users are actively using it. Results from beta testing and early adopters were very positive as this has <strong> reduced their time by almost 50% </strong> and has made it easy for them to manage parsers in the longterm. It is also estimated that the feature will reduce human errors involved in manually configuring the parsers and this can be as much as <strong> 90 %</strong>
+						<br><br> Looking back, we had several positives working as a team to deliver this feature. If we were to do one thing different, it would be to better plan the execution of the feature as some constraints came to play as a result of backend being developed alongside the UX design phase. This resulted in a lot of back and forth between backend and UX which could have been eliminated had we planned better.
 					</p>
 					<br>
 					
